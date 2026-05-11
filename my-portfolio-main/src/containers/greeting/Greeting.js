@@ -111,8 +111,8 @@ export default function Greeting() {
             <Button text="Contact me" href="#contact" />
             {greeting.resumeLink && (
               <a
-                href={`${process.env.PUBLIC_URL}/cv_of_Rashedul_Albab.pdf`}
-                download="cv_of_Rashedul_Albab.pdf"
+                href={`${process.env.PUBLIC_URL}/cv_of_alamin_chy.pdf`}
+                download="cv_of_alamin_chy.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="main-button"
@@ -134,7 +134,7 @@ export default function Greeting() {
         <div className="hero-image">
           <div className="hero-photo-wrap">
             <img
-              alt="Rashedul Albab"
+              alt={greeting.username}
               src="/Rashed-removebg.png"
               className="hero-photo"
             />

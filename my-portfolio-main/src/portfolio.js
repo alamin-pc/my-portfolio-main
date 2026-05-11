@@ -20,8 +20,8 @@ const illustration = {
 };
 
 const greeting = {
-  username: "Rashedul Albab",
-  title: "Hi all, I'm Rashed",
+  username: "alamin chy",
+  title: "Hi all, I'm alamin",
   subTitle: emoji(
     `I am a <span className="highlight">Researcher & AI Engineer</span> specializing in <span className="highlight">multimodal architectures</span> and <span className="highlight">theoretically-grounded deep learning</span>. With a background in <span className="highlight">Electrical and Electronic Engineering</span>, I bridge the gap between rigorous academic research and <span className="highlight-alt">robust engineering applications</span>. My work focuses on leveraging <span className="highlight">Generative AI, Computer Vision, and NLP</span> to solve high-impact challenges in <span className="highlight-alt">Healthcare, Renewable Energy, and Smart Grid Systems</span>.`
   ),
