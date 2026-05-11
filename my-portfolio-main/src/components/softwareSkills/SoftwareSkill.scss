@@ -1,0 +1,43 @@
+@import "../../_globalColor";
+
+.dev-icons {
+  padding-left: 0;
+  list-style: none;
+  font-size: 2.5rem;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  text-align: center;
+}
+
+.software-skill-inline {
+  display: inline-block;
+  margin-right: 15px;
+  margin-bottom: 10px;
+}
+
+.software-skill-inline > i {
+  /* color: #475569; */
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* .dark-mode .software-skill-inline>i {
+  color: rgba(241, 245, 249, 0.35);
+} */
+
+.software-skill-inline > i:hover {
+  transform: translateY(-8px) scale(1.1);
+  filter: drop-shadow(0 0 10px rgba($main-color, 0.3));
+}
+
+.software-skill-inline > p {
+  color: #475569;
+  font-size: 10px;
+}
+
+.dark-mode .software-skill-inline > p {
+  color: rgba(241, 245, 249, 0.35);
+}
+
+/* .software-skill-inline>i:hover~p {
+  color: $main-color;
+} */

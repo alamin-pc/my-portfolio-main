@@ -1,0 +1,58 @@
+@import "./globalColor";
+
+* {
+  transition: background-color 0.4s ease, border-color 0.4s ease;
+}
+
+body {
+  background-color: $lightBackground1;
+  color: $textColor;
+  overflow-x: clip;
+}
+
+.dark-mode {
+  background-color: $darkBackground;
+  color: $textColorDark;
+
+  body {
+    background-color: $darkBackground;
+  }
+}
+
+/* Modern Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba($main-color, 0.2);
+  border-radius: 10px;
+  border: 3px solid transparent;
+  background-clip: content-box;
+
+  &:hover {
+    background: rgba($main-color, 0.4);
+    background-clip: content-box;
+  }
+}
+
+.App {
+  text-align: center;
+  width: 100%;
+  overflow-x: clip;
+  background-color: inherit;
+}
+
+.subTitle {
+  color: $subTitle;
+  font-family: "Inter", sans-serif;
+  line-height: 1.6;
+}
+
+.dark-mode .subTitle {
+  color: $text-secondary-dark;
+}

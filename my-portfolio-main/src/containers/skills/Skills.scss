@@ -1,0 +1,264 @@
+@import "../../_globalColor";
+
+/* ═══════════════════════════════════════════════
+   SECTION WRAPPER
+   ═══════════════════════════════════════════════ */
+#skills {
+  background: $lightBackground2;
+  transition: all 0.3s ease;
+
+  &.dark-mode {
+    background: $darkBackground;
+  }
+}
+
+.sk-main {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 32px 20px 36px;
+}
+
+/* ═══════════════════════════════════════════════
+   HEADER
+   ═══════════════════════════════════════════════ */
+.sk-header {
+  text-align: center;
+  margin-bottom: 22px;
+}
+
+/* Reuse existing .skills-heading from global */
+
+.sk-subtitle {
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
+  color: #64748b;
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.5;
+  margin-top: 4px;
+
+  &.dark-mode {
+    color: #94a3b8;
+  }
+}
+
+/* ═══════════════════════════════════════════════
+   ICON BAR
+   ═══════════════════════════════════════════════ */
+.sk-icons-bar {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 8px 16px;
+  margin-bottom: 24px;
+  padding: 12px 16px;
+  border-radius: 12px;
+  background: rgba($main-color, 0.02);
+  border: 1px solid rgba($main-color, 0.06);
+}
+
+.sk-icon-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3px;
+  cursor: default;
+  transition: transform 0.25s ease;
+
+  i {
+    font-size: 22px;
+    transition: all 0.25s ease;
+  }
+
+  &:hover {
+    transform: translateY(-3px);
+
+    i {
+      filter: drop-shadow(0 0 8px rgba($main-color, 0.3));
+      transform: scale(1.15);
+    }
+  }
+}
+
+.sk-icon-label {
+  font-family: "Inter", sans-serif;
+  font-size: 9px;
+  font-weight: 500;
+  color: #64748b;
+  text-transform: capitalize;
+
+  &.dark-mode {
+    color: rgba(241, 245, 249, 0.4);
+  }
+}
+
+#skills.dark-mode .sk-icons-bar {
+  background: rgba(255, 255, 255, 0.02);
+  border-color: rgba(255, 255, 255, 0.05);
+}
+
+/* ═══════════════════════════════════════════════
+   CATEGORY GRID — 3 columns
+   ═══════════════════════════════════════════════ */
+.sk-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+.sk-cat {
+  background: #ffffff;
+  border: 1px solid rgba($main-color, 0.05);
+  border-radius: 12px;
+  padding: 14px 16px;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba($main-color, 0.08);
+    border-color: rgba($main-color, 0.15);
+
+    .sk-cat-emoji {
+      transform: scale(1.15) rotate(5deg);
+    }
+  }
+
+  &.dark-mode {
+    background: rgba(15, 23, 42, 0.4);
+    backdrop-filter: blur(12px);
+    border-color: rgba($main-color, 0.08);
+
+    &:hover {
+      background: rgba($main-color, 0.05);
+      border-color: rgba($main-color, 0.2);
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+    }
+  }
+}
+
+/* Category Header */
+.sk-cat-head {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.sk-cat-emoji {
+  font-size: 20px;
+  transition: transform 0.3s ease;
+  flex-shrink: 0;
+}
+
+.sk-cat-title {
+  font-family: "Outfit", sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  color: #1e293b;
+  margin: 0;
+  letter-spacing: -0.2px;
+
+  &.dark-mode {
+    color: #f1f5f9;
+  }
+}
+
+/* Divider */
+.sk-cat-divider {
+  height: 1.5px;
+  border-radius: 1px;
+  width: 100%;
+}
+
+/* Skill Tags */
+.sk-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.sk-tag {
+  background: transparent;
+  color: #334155;
+  padding: 4px 11px;
+  border-radius: 50px;
+  font-family: "Inter", sans-serif;
+  font-size: 11.5px;
+  font-weight: 600;
+  border: 1.5px solid;
+  transition: all 0.25s ease;
+  cursor: default;
+  line-height: 1.4;
+
+  &:hover {
+    background: color-mix(in srgb, var(--tag-color) 12%, transparent);
+    border-color: var(--tag-color) !important;
+    color: var(--tag-color);
+    transform: scale(1.04);
+  }
+
+  &.dark-mode {
+    color: rgba(241, 245, 249, 0.82);
+
+    &:hover {
+      color: var(--tag-color);
+    }
+  }
+}
+
+/* ═══════════════════════════════════════════════
+   RESPONSIVE — TABLET
+   ═══════════════════════════════════════════════ */
+@media (max-width: 1024px) {
+  .sk-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* ═══════════════════════════════════════════════
+   RESPONSIVE — MOBILE
+   ═══════════════════════════════════════════════ */
+@media (max-width: 768px) {
+  .sk-main {
+    padding: 24px 12px 28px;
+  }
+
+  .sk-grid {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .sk-icons-bar {
+    gap: 6px 12px;
+    padding: 10px 12px;
+  }
+
+  .sk-icon-item i {
+    font-size: 20px;
+  }
+
+  .sk-cat {
+    padding: 12px 14px;
+  }
+
+  .sk-cat-title {
+    font-size: 14px;
+  }
+
+  .sk-tag {
+    font-size: 11px;
+    padding: 3px 9px;
+  }
+}
+
+@media (max-width: 480px) {
+  .sk-icon-item i {
+    font-size: 18px;
+  }
+
+  .sk-icon-label {
+    font-size: 8px;
+  }
+}

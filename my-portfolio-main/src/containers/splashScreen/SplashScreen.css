@@ -1,0 +1,42 @@
+.splash-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.splash-animation-container {
+  height: 50vh;
+}
+
+.splash-title-container {
+  font-size: 2.5rem;
+  text-decoration: none;
+}
+
+.splash-title {
+  font-family: "Outfit", sans-serif;
+  font-size: 3.2rem;
+  font-weight: 800;
+  letter-spacing: -1px;
+  color: #0f172a;
+  position: relative;
+}
+
+.splash-title::after {
+  content: ".";
+  color: #3b82f6;
+  font-size: 3.5rem;
+  position: relative;
+  bottom: -4px;
+}
+
+.dark-mode .splash-title {
+  color: #f1f5f9;
+}
+
+.dark-mode .splash-title .r-brand,
+.dark-mode .splash-title::after {
+  color: #818cf8;
+}

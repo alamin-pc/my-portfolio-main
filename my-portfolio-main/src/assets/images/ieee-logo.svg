@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 120">
+  <rect width="500" height="120" fill="none"/>
+  <path d="M40 30h10v60H40zM60 30h25c15 0 25 10 25 25s-10 25-25 25H60V30zm10 40h15c8 0 15-5 15-15s-7-15-15-15H70v30zM120 30h50v10h-40v15h35v10h-35v15h40v10h-50V30zm60 30h50v10h-40v15h35v10h-35v15h40v10h-50V30z" fill="#00629b"/>
+  <text x="40" y="110" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#00629b">Advancing Technology for Humanity</text>
+  <path d="M15 15l15 15h30l15-15L60 0H30L15 15z" fill="#00629b" transform="translate(0, 5) scale(0.5)"/>
+</svg>

@@ -1,0 +1,117 @@
+@import "../../_globalColor";
+
+.tensor-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -2;
+  overflow: hidden;
+  pointer-events: none;
+  transition: background 1s ease;
+
+  &.light {
+    background: #fdfdfd;
+  }
+
+  &.dark {
+    background: #020617;
+  }
+}
+
+.tensor-canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+// Premium vignette centered on vanishing point
+.tensor-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  pointer-events: none;
+
+  .light & {
+    background: radial-gradient(
+        ellipse at 50% 38%,
+        transparent 20%,
+        #fdfdfd 85%
+      ),
+      linear-gradient(to bottom, #fdfdfd 0%, transparent 15%);
+  }
+
+  .dark & {
+    background: radial-gradient(
+        ellipse at 50% 38%,
+        transparent 20%,
+        #020617 85%
+      ),
+      linear-gradient(to bottom, #020617 0%, transparent 15%);
+  }
+}
+
+// Edge protection
+.tensor-container::before,
+.tensor-container::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  z-index: 3;
+  pointer-events: none;
+}
+
+.tensor-container::before {
+  top: 0;
+  left: 0;
+  height: 10vh;
+}
+
+.tensor-container::after {
+  bottom: 0;
+  left: 0;
+  height: 20vh;
+}
+
+.tensor-container.light::before {
+  background: linear-gradient(to bottom, #fdfdfd, transparent);
+}
+
+.tensor-container.light::after {
+  background: linear-gradient(to top, #fdfdfd, transparent);
+}
+
+.tensor-container.dark::before {
+  background: linear-gradient(to bottom, #020617, transparent);
+}
+
+.tensor-container.dark::after {
+  background: linear-gradient(to top, #020617, transparent);
+}
+
+@media (max-width: 768px) {
+  .tensor-overlay {
+    .light & {
+      background: radial-gradient(
+        ellipse at 50% 38%,
+        transparent 10%,
+        #fdfdfd 80%
+      );
+    }
+
+    .dark & {
+      background: radial-gradient(
+        ellipse at 50% 38%,
+        transparent 10%,
+        #020617 80%
+      );
+    }
+  }
+}
