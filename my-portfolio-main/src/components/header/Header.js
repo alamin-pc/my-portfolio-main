@@ -18,7 +18,7 @@ function Header() {
       <header className={isDark ? "dark-menu header" : "header"}>
         <a href="/#greeting" className="logo">
           <span className="logo-name">
-            <span className="r-brand">r</span>Albab
+            <span className="r-brand">A</span>l Amin
           </span>
         </a>
         <input className="menu-btn" type="checkbox" id="menu-btn" />
@@ -34,19 +34,25 @@ function Header() {
             <a href="/#greeting" onClick={closeMenu}>Home</a>
           </li>
           <li>
-            <a href="/#education" onClick={closeMenu}>Education</a>
-          </li>
-          <li>
             <a href="/#research" onClick={closeMenu}>Research</a>
-          </li>
-          <li>
-            <a href="/#projects" onClick={closeMenu}>Projects</a>
           </li>
           <li>
             <a href="/#experience" onClick={closeMenu}>Experiences</a>
           </li>
           <li>
+            <a href="/#education" onClick={closeMenu}>Education</a>
+          </li>
+          <li>
             <a href="/#skills" onClick={closeMenu}>Skills</a>
+          </li>
+          <li>
+            <a href="/#projects" onClick={closeMenu}>Projects</a>
+          </li>
+          <li>
+            <a href="/#awards" onClick={closeMenu}>Awards</a>
+          </li>
+          <li>
+            <a href="/#leadership" onClick={closeMenu}>Leadership</a>
           </li>
           <li>
             <Link to="/blogs" onClick={closeMenu}>Blog</Link>

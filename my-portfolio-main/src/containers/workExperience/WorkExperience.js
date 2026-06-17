@@ -71,17 +71,6 @@ export default function WorkExperience() {
                       >
                         {/* Card Main Row */}
                         <div className="ex-card-row">
-                          {/* Logo */}
-                          {exp.companylogo && (
-                            <div className="ex-logo">
-                              <img
-                                src={exp.companylogo}
-                                alt={exp.company}
-                                crossOrigin="anonymous"
-                              />
-                            </div>
-                          )}
-
                           {/* Info */}
                           <div className="ex-info">
                             <div className="ex-info-top">
@@ -101,36 +90,63 @@ export default function WorkExperience() {
                                   className="ex-company-link"
                                   style={{color: color}}
                                   onClick={(e) => e.stopPropagation()}
+                                  dangerouslySetInnerHTML={{__html: exp.company}}
                                 >
-                                  {exp.company}
-                                  <i className="fas fa-external-link-alt"></i>
                                 </a>
                               ) : (
-                                <span className="ex-company" style={{color: color}}>
-                                  {exp.company}
+                                <span 
+                                  className="ex-company" 
+                                  style={{color: color}}
+                                  dangerouslySetInnerHTML={{__html: exp.company}}
+                                >
                                 </span>
                               )}
+                              {exp.url && <i className="fas fa-external-link-alt" style={{color: color, fontSize: "9px", marginLeft: "4px"}}></i>}
+                              <p className={`ex-desc ${isDark ? "dark-mode" : ""}`}>
+                                {exp.desc}
+                              </p>
                             </div>
-                            <p className={`ex-desc ${isDark ? "dark-mode" : ""}`}>
-                              {exp.desc}
-                            </p>
+
+                            {exp.certificateUrl && (
+                              <div className="ex-actions">
+                                <button
+                                  className={`ex-action-btn ${isDark ? "dark-mode" : ""}`}
+                                  onClick={() => window.open(exp.certificateUrl, "_blank").focus()}
+                                >
+                                  <i className="fas fa-certificate"></i>
+                                  <span>Certificate</span>
+                                </button>
+                              </div>
+                            )}
                           </div>
                         </div>
 
-                        {/* Bullets - always visible */}
+                        {/* Bullets - aligned with logo */}
                         {hasBullets && (
                           <div className="ex-bullets ex-bullets-open">
-                            <ul>
-                              {exp.descBullets.map((bullet, bIdx) => (
-                                <li
-                                  key={bIdx}
-                                  className={isDark ? "dark-mode" : ""}
-                                  style={{"--bullet-color": color}}
-                                >
-                                  {bullet}
-                                </li>
-                              ))}
-                            </ul>
+                            <div className="ex-bullets-container">
+                              {exp.companylogo && (
+                                <div className="ex-bullets-logo">
+                                  <img
+                                    src={exp.companylogo}
+                                    alt={exp.company ? exp.company.replace(/(<([^>]+)>)/gi, "") : ""}
+                                    crossOrigin="anonymous"
+                                  />
+                                </div>
+                              )}
+                              <div className="ex-bullets-content">
+                                <ul>
+                                  {exp.descBullets.map((bullet, bIdx) => (
+                                    <li
+                                      key={bIdx}
+                                      className={isDark ? "dark-mode" : ""}
+                                      style={{"--bullet-color": color}}
+                                      dangerouslySetInnerHTML={{__html: bullet}}
+                                    />
+                                  ))}
+                                </ul>
+                              </div>
+                            </div>
                           </div>
                         )}
 

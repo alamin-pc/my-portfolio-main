@@ -60,6 +60,52 @@
   transition: all 0.4s ease;
 }
 
+.education-links-container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 15px;
+  width: 100%;
+}
+
+.education-link-box {
+  padding: 8px 12px;
+  border-radius: 10px;
+  font-family: "Inter", sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  border: 1.5px solid rgba($main-color, 0.2);
+  color: $main-color;
+  background: rgba($main-color, 0.03);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.02);
+
+  &:hover {
+    background: $main-color;
+    color: #ffffff;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba($main-color, 0.25);
+    border-color: $main-color;
+  }
+}
+
+.dark-mode .education-link-box {
+  border-color: rgba($main-color, 0.4);
+  background: rgba($main-color, 0.1);
+  color: #fff;
+
+  &:hover {
+    background: $main-color;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+  }
+}
+
 .education-card-right {
   flex: 1;
 }

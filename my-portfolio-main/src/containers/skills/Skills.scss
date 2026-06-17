@@ -104,6 +104,10 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 12px;
+
+  &.soft-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 .sk-cat {

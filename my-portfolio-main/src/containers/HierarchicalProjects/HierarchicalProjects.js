@@ -120,9 +120,29 @@ export default function HierarchicalProjects() {
                               className="hp-row-dot"
                               style={{background: category.style?.color || '#3b82f6'}}
                             ></span>
-                            <h3 className={`hp-row-title ${isDark ? "dark-mode" : ""}`}>
-                              {project.projectName}
-                            </h3>
+                            <div style={{ display: "flex", flexDirection: "column", flex: 1, minWidth: 0 }}>
+                              {(() => {
+                                const match = project.projectName.match(/^(.*)\(([^)]+)\)$/);
+                                const titleText = match ? match[1].trim() : project.projectName;
+                                const dateText = match ? match[2].trim() : null;
+
+                                return (
+                                  <h3 className={`hp-row-title ${isDark ? "dark-mode" : ""}`} style={{ display: "flex", justifyContent: "space-between", width: "100%", alignItems: "center", gap: "20px" }}>
+                                    <span className="hp-title-text">{titleText}</span>
+                                    {dateText && (
+                                      <span className="hp-project-date" style={{ fontWeight: "normal", fontSize: "0.85em", opacity: 0.7, whiteSpace: "nowrap" }}>
+                                        {dateText}
+                                      </span>
+                                    )}
+                                  </h3>
+                                );
+                              })()}
+                              {project.projectSubtitle && (
+                                <span className={`hp-row-subtitle ${isDark ? "dark-mode" : ""}`} style={{ fontSize: "12px", opacity: 0.6, marginTop: "2px", fontFamily: "Inter, sans-serif" }}>
+                                  {project.projectSubtitle}
+                                </span>
+                              )}
+                            </div>
                           </div>
                           <div className="hp-row-right" onClick={(e) => e.stopPropagation()}>
                             {project.footerLink &&
@@ -167,9 +187,20 @@ export default function HierarchicalProjects() {
 
                         {/* Expandable description */}
                         <div className={`hp-row-desc ${isExpanded ? "hp-row-desc-open" : ""}`}>
-                          <p className={`hp-desc-text ${isDark ? "dark-mode" : ""}`}>
-                            {project.projectDesc}
-                          </p>
+                          <div className={`hp-desc-text ${isDark ? "dark-mode" : ""}`}>
+                            {project.projectDesc.split("\n").map((line, i) => (
+                              <p key={i} style={{ marginBottom: "4px", display: "flex", gap: "8px" }}>
+                                {line.trim().startsWith("➤") || line.trim().startsWith("•") || line.trim().startsWith("🔹") || line.trim().startsWith(">") || line.trim().startsWith("-") ? (
+                                  <span>{line.trim()}</span>
+                                ) : (
+                                  <>
+                                    <span style={{ color: category.style?.color || '#3b82f6' }}>➤</span>
+                                    <span>{line.trim()}</span>
+                                  </>
+                                )}
+                              </p>
+                            ))}
+                          </div>
                         </div>
                       </div>
                     );
@@ -179,22 +210,6 @@ export default function HierarchicalProjects() {
             ))}
           </div>
 
-          {/* Footer */}
-          <div className={`hp-footer ${isDark ? "dark-mode" : ""}`}>
-            <p className={`hp-footer-text ${isDark ? "dark-mode" : ""}`}>
-              Looking for more? Explore my GitHub portfolio for additional
-              end-to-end AI projects across Machine Learning, Computer Vision,
-              NLP, Deep Learning, and Generative AI.
-            </p>
-            <a
-              href="https://github.com/rashedulalbab253"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hp-footer-btn"
-            >
-              <i className="fab fa-github"></i> Explore All Projects
-            </a>
-          </div>
         </div>
       </div>
     </div>

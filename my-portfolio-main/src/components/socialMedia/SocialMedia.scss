@@ -74,6 +74,10 @@
   background-color: $researchgate;
 }
 
+.google-scholar i {
+  background-color: $googleScholar;
+}
+
 /* Hover Transition */
 .twitter i:hover,
 .google i:hover,
@@ -85,6 +89,7 @@
 .stack-overflow i:hover,
 .kaggle i:hover,
 .researchgate i:hover,
+.google-scholar i:hover,
 .medium i:hover {
   background-color: $textColor;
 }

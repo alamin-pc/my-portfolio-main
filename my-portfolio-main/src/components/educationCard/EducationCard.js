@@ -48,6 +48,7 @@ export default function EducationCard({school}) {
                   alt={school.schoolName}
                 />
               )}
+
             </div>
           )}
           <div className="education-card-right">

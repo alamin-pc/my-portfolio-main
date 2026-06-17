@@ -25,30 +25,64 @@ export default function Education() {
               key={index}
               className={`ed-card ${isDark ? "dark-mode" : ""}`}
             >
-              {/* Logo */}
-              {school.logo && (
-                <div className="ed-logo">
-                  {school.schoolUrl ? (
-                    <a
-                      href={school.schoolUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
+              {/* Logo Column */}
+              <div className="ed-logo-col">
+                {school.logo && (
+                  <div className="ed-logo">
+                    {school.schoolUrl ? (
+                      <a
+                        href={school.schoolUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <img
+                          src={school.logo}
+                          alt={school.schoolName}
+                          crossOrigin="anonymous"
+                        />
+                      </a>
+                    ) : (
                       <img
                         src={school.logo}
                         alt={school.schoolName}
                         crossOrigin="anonymous"
                       />
-                    </a>
-                  ) : (
-                    <img
-                      src={school.logo}
-                      alt={school.schoolName}
-                      crossOrigin="anonymous"
-                    />
-                  )}
-                </div>
-              )}
+                    )}
+                  </div>
+                )}
+                
+
+                
+                {/* Result, EQF and Credits */}
+                {(school.finalGrade || school.eqfLevel || school.numberCredits || school.ects) && (
+                  <div className={`ed-stats ${isDark ? "dark-mode" : ""}`}>
+                    {school.finalGrade && (
+                      <div className="ed-stat-item">
+                        <span className="ed-stat-label">Final grade: </span>
+                        <span className="ed-stat-value">{school.finalGrade}</span>
+                      </div>
+                    )}
+                    {school.eqfLevel && (
+                      <div className="ed-stat-item">
+                        <span className="ed-stat-label">Level in EQF: </span>
+                        <span className="ed-stat-value">{school.eqfLevel}</span>
+                      </div>
+                    )}
+                    {school.numberCredits && (
+                      <div className="ed-stat-item">
+                        <span className="ed-stat-label">Number of credits: </span>
+                        <span className="ed-stat-value">{school.numberCredits}</span>
+                      </div>
+                    )}
+                    {school.ects && (
+                      <div className="ed-stat-item">
+                        <span className="ed-stat-label">Total ECTS: </span>
+                        <span className="ed-stat-value">{school.ects}</span>
+                      </div>
+                    )}
+                  </div>
+                )}
+              </div>
 
               {/* Info */}
               <div className="ed-info">
@@ -84,7 +118,7 @@ export default function Education() {
                 {school.descBullets && school.descBullets.length > 0 && (
                   <ul className={`ed-bullets ${isDark ? "dark-mode" : ""}`}>
                     {school.descBullets.map((bullet, i) => (
-                      <li key={i}>{bullet}</li>
+                      <li key={i} dangerouslySetInnerHTML={{__html: bullet}} />
                     ))}
                   </ul>
                 )}

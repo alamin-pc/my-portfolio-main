@@ -131,25 +131,9 @@
   padding: 16px 20px;
 }
 
-/* Logo */
+/* Logo (Legacy - hidden in cards) */
 .ex-logo {
-  width: 50px;
-  height: 50px;
-  border-radius: 10px;
-  background: #fff;
-  border: 1px solid rgba(0, 0, 0, 0.06);
-  padding: 6px;
-  flex-shrink: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
-
-  img {
-    max-width: 100%;
-    max-height: 100%;
-    object-fit: contain;
-  }
+  display: none;
 }
 
 .dark-mode .ex-logo {
@@ -210,6 +194,19 @@
   font-weight: 600;
   text-decoration: none;
   transition: opacity 0.2s ease;
+
+  a {
+    color: inherit;
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 2px;
+    transition: all 0.2s ease;
+
+    &:hover {
+      opacity: 0.7;
+      text-decoration-thickness: 2px;
+    }
+  }
 
   i {
     font-size: 9px;
@@ -291,17 +288,53 @@
 }
 
 .ex-bullets-open {
-  max-height: 400px;
+  max-height: 800px;
   padding: 0 20px 14px 20px;
+}
+
+.ex-bullets-container {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.ex-bullets-content {
+  flex: 1;
+  min-width: 0;
+}
+
+.ex-bullets-logo {
+  width: 85px;
+  height: 85px;
+  border-radius: 12px;
+  background: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  padding: 8px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+  margin-top: 4px;
+
+  img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+  }
+}
+
+.dark-mode .ex-bullets-logo {
+  background: rgba(255, 255, 255, 0.9);
 }
 
 .ex-bullets ul {
   list-style: none;
   padding: 0;
   margin: 0;
-  padding-left: 64px; /* align with text after logo */
+  flex: 1;
   border-left: 2px solid rgba(0, 0, 0, 0.05);
-  margin-left: 6px;
+  padding-left: 16px;
 
   li {
     font-family: "Inter", sans-serif;
@@ -350,6 +383,60 @@
 
 .ex-card-open .ex-accent {
   opacity: 1;
+}
+
+/* ═══════════════════════════════════════════════
+   ACTIONS (Certificate, etc.)
+   ═══════════════════════════════════════════════ */
+.ex-actions {
+  display: flex;
+  gap: 12px;
+  margin-top: 12px;
+}
+
+.ex-action-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 14px;
+  border-radius: 8px;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  background: #fff;
+  cursor: pointer;
+  transition: all 0.2s ease;
+
+  i {
+    font-size: 13px;
+    color: var(--accent, $main-color);
+  }
+
+  span {
+    font-family: "Inter", sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    color: #475569;
+  }
+
+  &:hover {
+    background: #f8fafc;
+    border-color: var(--accent, $main-color);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    transform: translateY(-1px);
+  }
+
+  &.dark-mode {
+    background: rgba(255, 255, 255, 0.05);
+    border-color: rgba(255, 255, 255, 0.1);
+
+    span {
+      color: #cbd5e1;
+    }
+
+    &:hover {
+      background: rgba(255, 255, 255, 0.1);
+      border-color: var(--accent, $main-color);
+    }
+  }
 }
 
 /* ═══════════════════════════════════════════════
@@ -403,7 +490,7 @@
   }
 
   .ex-bullets-open {
-    max-height: 500px;
+    max-height: 800px;
   }
 }
 

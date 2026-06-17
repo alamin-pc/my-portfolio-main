@@ -6,10 +6,10 @@ import {greeting, socialMediaLinks} from "../../portfolio";
 import StyleContext from "../../contexts/StyleContext";
 
 const ROLES = [
-  {text: "Researcher", icon: "🔬"},
-  {text: "AI Engineer", icon: "⚙️"},
-  {text: "Educator", icon: "📚"},
-  {text: "Research Assistant", icon: "🧪"}
+  {text: "Adjunct Lecturer", icon: "👨‍🏫"},
+  {text: "Photonics Enthusiast", icon: "💡"},
+  {text: "RF & Microwave Engineer", icon: "📡"},
+  {text: "AI Explorer", icon: "🧭"}
 ];
 const TYPING_SPEED = 80;
 const DELETING_SPEED = 40;
@@ -81,7 +81,7 @@ export default function Greeting() {
           {/* Status pill */}
           <div className={`hero-status ${isDark ? "dark-mode" : ""}`}>
             <span className="hero-status-dot"></span>
-            <span>Looking for PhD Opportunities</span>
+            <span>Seeking Master's &amp; PhD Opportunities</span>
           </div>
 
           {/* Name */}
@@ -111,8 +111,8 @@ export default function Greeting() {
             <Button text="Contact me" href="#contact" />
             {greeting.resumeLink && (
               <a
-                href={`${process.env.PUBLIC_URL}/cv_of_alamin_chy.pdf`}
-                download="cv_of_alamin_chy.pdf"
+                href={greeting.resumeLink}
+                download="resume_md._al_amin_chy_latest.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="main-button"
@@ -135,7 +135,7 @@ export default function Greeting() {
           <div className="hero-photo-wrap">
             <img
               alt={greeting.username}
-              src="/Rashed-removebg.png"
+              src="/alamin_photo_personal_website-gemini.png"
               className="hero-photo"
             />
             <div className="hero-photo-ring"></div>

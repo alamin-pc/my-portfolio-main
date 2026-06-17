@@ -20,30 +20,22 @@ const illustration = {
 };
 
 const greeting = {
-  username: "alamin chy",
-  title: "Hi all, I'm alamin",
+  username: "Md. Al Amin Chy",
+  title: "Hi all, I'm Md. Al Amin Chy",
   subTitle: emoji(
-    `I am a <span className="highlight">Researcher & AI Engineer</span> specializing in <span className="highlight">multimodal architectures</span> and <span className="highlight">theoretically-grounded deep learning</span>. With a background in <span className="highlight">Electrical and Electronic Engineering</span>, I bridge the gap between rigorous academic research and <span className="highlight-alt">robust engineering applications</span>. My work focuses on leveraging <span className="highlight">Generative AI, Computer Vision, and NLP</span> to solve high-impact challenges in <span className="highlight-alt">Healthcare, Renewable Energy, and Smart Grid Systems</span>.`
+    `I am an <span className="highlight">Adjunct Lecturer</span> and <span className="highlight">researcher</span> in Electrical and Electronic Engineering, specializing in <span className="highlight">metasurfaces, RF & microwave engineering, nanophotonics, optical manipulation, and machine learning</span>. My research focuses on <span className="highlight">advanced electromagnetic and photonic structures</span>, including <span className="highlight">reconfigurable metasurfaces, hyperbolic metamaterials, metamaterial absorbers, and nanophotonic biosensors</span> for <span className="highlight-alt">wave control, sensing, and energy applications</span>. I also explore <span className="highlight">explainable AI for intelligent engineering systems</span>, bridging photonics, electromagnetics, and artificial intelligence toward <span className="highlight-alt">next-generation wireless communications, stealth technology, renewable energy, nanotechnology, and smart infrastructure</span>.`
   ),
   resumeLink:
-    "https://drive.google.com/file/d/1ofFdKF_mqscH8WvXkSObnVvC9kK7Ldlu/view?usp=sharing", // Set to empty to hide the button
+    "/projects/Ressume_Md._Al_Amin_Chy_latest.pdf", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
 // Social Media Links
 
 const socialMediaLinks = {
-  github: "https://github.com/rashedulalbab253",
-  linkedin: "https://www.linkedin.com/in/rashedul-albab/",
-  gmail: "albabahmed74@gmail.com",
-  //gitlab: "https://gitlab.com/saadpasta",
-  facebook: "https://www.facebook.com/rashedul.albab",
-  researchgate:
-    "https://www.researchgate.net/profile/Rashedul-Albab?ev=hdr_xprf",
-  //medium: "https://medium.com/@saadpasta",
-  //stackoverflow: "https://stackoverflow.com/users/10422806/saad-pasta",
-  // Instagram, Twitter and Kaggle are also supported in the links!
-  // To customize icons and social links, tweak src/components/SocialMedia
+  linkedin: "https://www.linkedin.com/in/md-alamin-chy",
+  googleScholar: "https://scholar.google.com/citations?user=QgYDaycAAAAJ&hl=en",
+  gmail: "edu.eee.alamin@gmail.com",
   display: true // Set true to display this section, defaults to false
 };
 
@@ -52,23 +44,104 @@ const socialMediaLinks = {
 const skillsSection = {
   title: "Technical Skills",
   subTitle:
-    "A comprehensive skill set spanning AI/ML, Computer Vision, Software Development, and Hardware Engineering.",
+    "A comprehensive skill set spanning Electromagnetic Engineering, Photonics, AI/ML, and Embedded Systems.",
   skills: [
-    emoji("⚡ Programming: Python, MATLAB, C/C++, LaTeX"),
     emoji(
-      "⚡ Tools & Frameworks: PyTorch, TensorFlow, Keras DL framework, Scikit-Learn, Huggingface Transformers"
+      "➷ Computational EM & Photonics Tools: Ansys HFSS, COMSOL Multiphysics, CST Microwave Studio, Lumerical (FDTD), ADS, SCAPS-1D"
+    ),
+    emoji("➷ Programming: Python, MATLAB, C/C++, LaTeX"),
+    emoji(
+      "➷ Machine Learning & Data Science Tools: Scikit-Learn, XGBoost, SHAP, Pandas, NumPy, Matplotlib"
     ),
     emoji(
-      "⚡ Software & DevOps: Simulink, Proteus, AutoCAD, FastAPI, Docker, Git, LangGraph, CrewAI"
+      "➷ Embedded Systems & Hardware Tools: Arduino, IoT Sensors & Modules, Microprocessor Interfacing"
     ),
     emoji(
-      "⚡ AI/ML: Core Machine Learning (Supervised and Unsupervised Learning), Deep Learning (Neural Networks, Transformers), Advanced NLP, LLMs, Multimodal AI, RAG, Generative Models (GANs)"
+      "➷ Software & Research Tools: MS Word, Excel, PowerPoint, Overleaf, OriginPro, Wolfram Mathematica"
     ),
-    emoji(
-      "⚡ Computer Vision: Image Segmentation, Object Detection, Digital Image Processing (Feature Extraction, Enhancement), Optical Character Recognition (OCR), Vision Language Model (VLM)"
-    ),
-    emoji("⚡ Hardware Skills: Arduino, IoT")
+    emoji("➷ 3D Modeling & Graphics: Blender")
   ],
+  categories: [
+    {
+      id: "simulation",
+      title: "Computational EM & Photonics Tools",
+      emoji: "📡",
+      color: "#06b6d4",
+      skills: [
+        "Ansys HFSS",
+        "COMSOL Multiphysics",
+        "CST Microwave Studio",
+        "Lumerical (FDTD)",
+        "ADS",
+        "SCAPS-1D"
+      ]
+    },
+    {
+      id: "programming",
+      title: "Programming",
+      emoji: "💻",
+      color: "#f59e0b",
+      skills: ["Python", "MATLAB", "C/C++", "LaTeX"]
+    },
+    {
+      id: "ml_ds",
+      title: "Machine Learning & Data Science Tools",
+      emoji: "🧠",
+      color: "#8b5cf6",
+      skills: ["Scikit-Learn", "XGBoost", "SHAP", "Pandas", "NumPy", "Matplotlib"]
+    },
+    {
+      id: "embedded",
+      title: "Embedded Systems & Hardware Tools",
+      emoji: "🛰️",
+      color: "#f97316",
+      skills: ["Arduino", "IoT Sensors & Modules", "Microprocessor Interfacing"]
+    },
+    {
+      id: "software_research",
+      title: "Software & Research Tools",
+      emoji: "📝",
+      color: "#10b981",
+      skills: ["MS Word", "Excel", "PowerPoint", "Overleaf", "OriginPro", "Wolfram Mathematica"]
+    },
+    {
+      id: "graphics",
+      title: "3D Modeling & Graphics",
+      emoji: "🎨",
+      color: "#f43f5e",
+      skills: ["Blender"]
+    }
+  ],
+  softSkillsCategories: [
+    {
+      title: "Interpersonal Skills",
+      emoji: "🤝",
+      color: "#6366f1",
+      skills: [
+        "Leadership",
+        "Communication Skills",
+        "Teamwork",
+        "Research Collaboration",
+        "Adaptability",
+        "Technical Presentation"
+      ]
+    },
+    {
+      title: "Professional Skills",
+      emoji: "💼",
+      color: "#10b981",
+      skills: [
+        "Problem Solving",
+        "Critical Thinking",
+        "Scientific Writing",
+        "Project Management",
+        "Time Management",
+        "Fast Learning Ability"
+      ]
+    }
+  ],
+  softSkillsStatement:
+    "Strengthened through collaborative research, professional work experience, effective leadership, active teamwork, and impactful extra-curricular activities.",
 
   /* Make Sure to include correct Font Awesome Classname to view your icon
 https://fontawesome.com/icons?d=gallery */
@@ -82,38 +155,10 @@ https://fontawesome.com/icons?d=gallery */
       }
     },
     {
-      skillName: "pytorch",
-      fontAwesomeClassname: "fas fa-fire",
+      skillName: "MATLAB",
+      fontAwesomeClassname: "fas fa-chart-line",
       style: {
-        color: "#EE4C2C"
-      }
-    },
-    {
-      skillName: "tensorflow",
-      fontAwesomeClassname: "fas fa-brain",
-      style: {
-        color: "#FF6F00"
-      }
-    },
-    {
-      skillName: "docker",
-      fontAwesomeClassname: "fab fa-docker",
-      style: {
-        color: "#2496ED"
-      }
-    },
-    {
-      skillName: "git",
-      fontAwesomeClassname: "fab fa-git-alt",
-      style: {
-        color: "#F05032"
-      }
-    },
-    {
-      skillName: "aws",
-      fontAwesomeClassname: "fab fa-aws",
-      style: {
-        color: "#FF9900"
+        color: "#0076A8"
       }
     },
     {
@@ -124,38 +169,66 @@ https://fontawesome.com/icons?d=gallery */
       }
     },
     {
-      skillName: "MATLAB",
-      fontAwesomeClassname: "fas fa-chart-line",
+      skillName: "LaTeX",
+      fontAwesomeClassname: "fas fa-file-alt",
       style: {
-        color: "#0076A8"
+        color: "#008080"
       }
     },
     {
-      skillName: "arduino",
+      skillName: "COMSOL",
+      fontAwesomeClassname: "fas fa-wave-square",
+      style: {
+        color: "#800000"
+      }
+    },
+    {
+      skillName: "CST Microwave Studio",
+      fontAwesomeClassname: "fas fa-broadcast-tower",
+      style: {
+        color: "#0047AB"
+      }
+    },
+    {
+      skillName: "Scikit-Learn",
+      fontAwesomeClassname: "fas fa-brain",
+      style: {
+        color: "#F89939"
+      }
+    },
+    {
+      skillName: "Arduino",
       fontAwesomeClassname: "fas fa-microchip",
       style: {
         color: "#00979D"
       }
     },
     {
-      skillName: "Computer Vision",
-      fontAwesomeClassname: "fas fa-eye",
+      skillName: "MS Excel",
+      fontAwesomeClassname: "fas fa-file-excel",
       style: {
-        color: "#4CAF50"
+        color: "#217346"
       }
     },
     {
-      skillName: "Machine Learning",
-      fontAwesomeClassname: "fas fa-robot",
+      skillName: "MS Word",
+      fontAwesomeClassname: "fas fa-file-word",
       style: {
-        color: "#FFC107"
+        color: "#2B579A"
       }
     },
     {
-      skillName: "Deep Learning",
-      fontAwesomeClassname: "fas fa-network-wired",
+      skillName: "PowerPoint",
+      fontAwesomeClassname: "fas fa-file-powerpoint",
       style: {
-        color: "#E91E63"
+        color: "#D24726"
+      }
+    },
+    {
+      skillName: "Overleaf",
+      fontAwesomeClassname: "fas fa-leaf",
+      style: {
+        color: "#47A141"
       }
     }
   ],
@@ -168,16 +241,23 @@ const educationInfo = {
   display: true, // Set false to hide this section, defaults to true
   schools: [
     {
-      schoolName: "Shahjalal University of Science & Technology",
+      schoolName: "Shahjalal University of Science & Technology, Bangladesh.",
       logo: "/works/sust_logo.png",
       schoolUrl: "https://www.sust.edu/",
-      subHeader: "Bachelor of Science in Electrical and Electronic Engineering",
-      duration: "January 2020 - June 2025"
-      //desc: "Participated in the research of XXX and published 3 papers.",
-      //descBullets: [
-      // "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-      // "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
-      //]
+      subHeader: "Bachelor of Science (Engg.) in Electrical and Electronic Engineering.",
+      duration: "January 2020 - June 2025",
+      finalGrade: "3.88/4.00 with Distinction",
+      eqfLevel: "EQF level 6",
+      numberCredits: "163",
+      ects: "240",
+      certificateUrl: "/projects/Chy_Certificate_verified.pdf",
+      transcriptUrl: "/projects/Chy_trasnscript.pdf",
+      descBullets: [
+        "<strong>Advance Mathematics:</strong> Differential & Integral Calculus, Complex Variables & Vector Analysis, Differential Equations, Laplace & Fourier Transform, Linear Algebra, Probability & Statistics, Numerical Analysis.",
+        "<strong>Physics & Engineering Science:</strong> Physics I (Optics, Heat, Waves, Oscillation), Physics II (Electricity & Magnetism, Modern Physics, Mechanics), Chemistry (Inorganic & Quantitative Analysis), Solid State Devices, Telecommunications.",
+        "<strong>Electromagnetics, Signal Processing & Communication Systems:</strong> Electromagnetic Fields and Waves, Electrical Properties of Materials, Communication, Signals and Systems, Signal Processing, Electromagnetics, Quantum Mechanics, RF & Microwave.",
+        "<strong>Electrical, Electronics & Energy Systems Engineering:</strong> Electrical Circuits, Analog & Digital Electronics, Power Electronics, Microprocessor & Embedded Systems (with Lab), VLSI, Embedded Systems, Control Systems, Measurement and Instrumentation, Renewable Energy Systems."
+      ]
     }
     //{
     //schoolName: "Stanford University",
@@ -217,48 +297,63 @@ const workExperiences = {
   display: true,
   sections: [
     {
-      title: "Research Experience",
+      title: "Professional Experience",
       experiences: [
         {
-          title: "Research Assistant",
-          company: "Dept. of EEE, Sylhet Engineering College",
-          //companylogo: "/works/logo.png",
-          date: "Dec 2024 – Jul 2025",
-          desc: "Assisted in research projects focused on Machine Learning, Computer Vision, and AI applications.",
+          title: "Adjunct Lecturer",
+          company: "Dept. of Electrical and Electronic Engineering, Sylhet Engineering College.",
+          companylogo: "/works/SEC Logo.png",
+          date: "Aug 2025 – Present",
+          desc: "Full Time, Bangladesh",
           descBullets: [
-            "Conducted  research on explainable machine learning for multi-class power quality disturbance classification, implementing preprocessing pipelines, classical ML models (LR, SVM, RF, XGBoost), and a 1D-CNN architecture,accepted at ICCIT(IEEE),2025.",
-            "Performed model interpretability analysis using SHAP and feature importance methods."
+            "Delivered lectures for undergraduate coursework, including:<br/><div style='display: flex; flex-wrap: wrap; gap: 20px; margin-top: 5px;'><div style='min-width: 250px;'>➤ <strong>Theoretical Courses:</strong><br/>&nbsp;&nbsp;&nbsp;1) <em>Electromagnetic Fields & Waves</em>;<br/>&nbsp;&nbsp;&nbsp;2) <em>Electrical Properties of Materials</em>;<br/>&nbsp;&nbsp;&nbsp;3) <em>Electronics II</em></div><div style='min-width: 250px;'>➤ <strong>Laboratory Courses:</strong><br/>&nbsp;&nbsp;&nbsp;4) <em>Measurement & Instrumentation Lab</em>;<br/>&nbsp;&nbsp;&nbsp;5) <em>Communication I Lab</em></div></div>",
+            "Conducted lectures, graded coursework, and assisted students with course material during and after class."
           ],
           url: "https://sec.ac.bd/"
-        },
-        {
-          title: "Research Trainee",
-          company: "Mahdy Research Academy",
-          // companylogo: "/works/mahdy.png",
-          date: "Jan 2024 – Dec 2024",
-          desc: "Conducted research in ML, NLP,Human Centered AI and Healthcare AI applications.",
-          descBullets: [
-            "Mastered topics from statistical modeling to advanced architectures (Transformers, XAI) with hands-on implementation in Python, TensorFlow,PyTorch and scikit-learn.",
-            "Developed a novel AI research project, leading to a journal-ready manuscript and a professional technical poster through iterative methodology refinement."
-          ],
-          url: "https://www.facebook.com/groups/315264107544221" // Replace with official URL if different
         }
       ]
     },
     {
-      title: "Professional Experience",
+      title: "Research Experience",
       experiences: [
         {
-          title: "Machine Learning Engineer Intern",
-          company: "eleVVo",
-          companylogo: "/works/Elevo.png",
-          date: "Aug 2025 – Sep 2025",
-          desc: "Developed and deployed ML & DL models on real-world data using Python, scikit-learn, Tensorflow, pytorch, Streamlit, Fastapi, AWS.",
-          //descBullets: [
-          //"Developed and deployed ML & DL  models on real-world data using Python, scikit-learn,Tensorflow,pytorch,Streamlit,Fastapi,AWS.",
-
-          //],
-          url: "https://elevvo.tech/home"
+          title: "Research Assistant",
+          company: "Dept. of Electrical and Electronic Engineering, Shahjalal University of Science and Technology.",
+          companylogo: "/works/sust_logo.png",
+          date: "May 2026 – Present",
+          desc: "Part Time, Bangladesh",
+          descBullets: [
+            "Applied FDTD, EMT, and TMM techniques to analyze optical responses, resonance behavior, sensing performance.",
+            "Designed ultra-broadband metamaterial absorbers for solar energy harvesting and thin-film photovoltaic applications.",
+            "Supervised by <a href='https://www.sust.edu/departments/eee/faculty/arif-eee@sust.edu' target='_blank' rel='noopener noreferrer' style='color: inherit; text-decoration: underline;'>Assistant Professor Arif Ahammad</a>"
+          ],
+          url: "https://www.sust.edu/"
+        },
+        {
+          title: "Research Assistant",
+          company: "Faculty of Agricultural Engineering and Technology, Sylhet Agricultural University",
+          companylogo: "/works/SAU_logo.png",
+          date: "Jan '25 — Jun '25",
+          desc: "Internship, Bangladesh",
+          descBullets: [
+            "Simulated using <strong><em>ANSYS HFSS</em></strong> and <strong><em>COMSOL Multiphysics</em></strong>, with hands-on experience in photonics labs and optical materials.",
+            "Conducted numerical analysis, RF/microwave simulations, and research manuscript preparation related to light matter interactions and electromagnetic structures.",
+            "Supervised by <a href='https://sau.ac.bd/department/faculty_profile/610/profile_details_2' target='_blank' rel='noopener noreferrer' style='color: inherit; text-decoration: underline;'>Assistant Professor Md. Janibul Alam Soeb</a>"
+          ],
+          url: "https://sau.ac.bd/"
+        },
+        {
+          title: "Research Trainee",
+          company: "<a href='https://www.facebook.com/groups/315264107544221/' target='_blank' rel='noopener noreferrer'>Mahdy Research Academy</a>, <a href='https://sites.google.com/view/nsuopticslab/home' target='_blank' rel='noopener noreferrer'>NSU Optics Lab</a>, <a href='https://www.northsouth.edu/' target='_blank' rel='noopener noreferrer'>North South University</a>",
+          companylogo: "/works/NSU logo.png",
+          date: "Jan 2024 – Dec 2024",
+          desc: "Full Time, Bangladesh",
+          descBullets: [
+            "<strong>Phase 1 (6 months):</strong> Studied metasurface and photonic time crystal physics; reproduced published results and compiled research notes.",
+            "<strong>Phase 2 (6 months):</strong> First author on a journal manuscript; designed and optimized a multifunctional metasurface in <strong><em>CST</em></strong> (100+ simulations) and prepared figures using <strong><em>MATLAB</em></strong> and <strong><em>BLENDER</em></strong>.",
+            "<strong>Research Recognition:</strong> Received a supervisor-certified recognition letter for successfully completing and submitting the research project for Q1 journal publication consideration under his supervision.",
+            "Supervised by <a href='https://scholar.google.com/citations?hl=en&user=PxNOguMAAAAJ&view_op=list_works&sortby=pubdate' target='_blank' rel='noopener noreferrer' style='color: inherit; text-decoration: underline;'>Professor Dr. Mahdy Rahman Chowdhury</a>"
+          ]
         }
       ]
     },
@@ -270,11 +365,11 @@ const workExperiences = {
           company: "Training Institue for Chemical Industries(TICI)",
           companylogo: "/works/tici.png",
           date: "January 2024",
-          desc: "3 week intensive industrial technology course at TICI, covering advanced Electrical Engineering & Instrumentation ,including motor control, substation distribution, DCS and PLC/SCADA systems",
-          //descBullets: [
-          //"Implemented data preprocessing scripts.",
-          // "Integrated AI models into existing web dashboards."
-          //],
+          desc: "approx. 1 month intensive training, Industrial Technology on Electrical Engineering & Instrumentation.",
+          descBullets: [
+            "Electronic instrumentation, oscilloscopes, signal analysis, circuit testing, and measurement techniques.",
+            "Data acquisition, experimental setup design, signal processing, and hardware–software integration."
+          ],
           url: "https://tici.gov.bd/"
         }
       ]
@@ -283,23 +378,14 @@ const workExperiences = {
       title: "Teaching Experience",
       experiences: [
         {
-          title: "Physics Instructor",
-          company: "Bright Teaching Home",
-          companylogo: "/works/bright.png",
-          date: "Jan 2020 – present",
-          desc: "Teaching Physics at the HSC level for 5 years.",
+          title: "Academic Instructor",
+          company: "Baraka Academy, Sylhet, Bangladesh",
+          companylogo: "/works/Baraka_logo.jpg",
+          date: "September 2020 - November 2024",
+          desc: "Part time, On-site",
           descBullets: [
-            "Designed exam questions to develop problem solving skills and prepare students for competitive exams"
-          ]
-        },
-        {
-          title: "ICT  Instructor",
-          company: "Odommo Academy",
-          companylogo: "/works/odommo.jpeg",
-          date: "Nov 2025 – Present",
-          desc: "Assisting in teaching C programming,HTML and Database Management System.",
-          descBullets: [
-            "created exam questions aimed at enhancing problem-solving skills and preparing students for competitive exams."
+            "Manage 3 daily classes for SSC and HSC students alongside undergraduate studies, delivering consistent instruction over 5+ years in core science subjects.",
+            "Covered extensive topics:<br/>➤ <strong>[PHY]</strong> → Vector-Calculus, Geometrical & Physical Optics, Semiconductor & Electronics, Modern Physics, Electromagnetism, Particle physics<br/>➤ <strong>[H. MATH]</strong> → Calculus, Vectors, Matrices & Determinants, Algorithms, Particle Motion.<br/>➤ <strong>[ICT]</strong> → Communication Systems & Networking, Web design & HTML, C Programming, DBMS."
           ]
         }
       ]
@@ -321,218 +407,81 @@ const openSource = {
 const bigProjects = {
   title: "Projects",
   subtitle:
-    "A showcase of my work spanning AI/ML systems, Computer Vision, Multimodal AI, IoT systems, and Renewable Energy solutions",
+    "A showcase of practical engineering projects focused on Power Electronics, Automation, Robotics, Embedded Systems, IoT, and Sustainable Energy Solutions.",
 
   // Hierarchical project categories
   categories: [
     {
-      categoryName: "Generative AI & LLMs",
-      categoryIcon: "fas fa-brain",
+      categoryName: "Power Electronics & Energy Systems",
+      categoryIcon: "fas fa-bolt",
       style: {
-        color: "#9C27B0"
+        color: "#FBC02D"
       },
       projects: [
         {
-          projectName: "Bangladesh E-Passport AI Advisor",
+          projectName: "Three-Phase Inverter System using IGBT and Arduino (2024)",
+          projectSubtitle: "Power Electronics Lab",
           projectDesc:
-            "A smart, multi-agent AI system (CrewAI + Gemini/OpenAI) that guides users through Bangladesh passport applications with precise rules, fees, and localized reporting.",
-          footerLink: [
-            {
-              name: "Live Demo",
-              url: "https://rashedulalbab253-amar-epassport-agent-app-t50hdb.streamlit.app/"
-            },
-            {
-              name: "GitHub",
-              url: "https://github.com/rashedulalbab253/Bangladesh-E-Passport-AI-Advisor"
-            }
-          ]
+            "Designed a DC–AC inverter using IGBT with SPWM control for motor drives.\nImplemented Arduino switching control and evaluated performance under load conditions."
         },
         {
-          projectName: "AI-Driven 100+ Language STEM Solver",
+          projectName: "Smart Energy Meter (Dec '24 — Jan '25)",
+          projectSubtitle: "Microprocessor and Embedded System Lab",
           projectDesc:
-            "Developed an AI-powered multilingual STEM solver using FastAPI, Docker, and Google Gemini 2.5, providing step-by-step solutions for Math, Physics, and Chemistry in 100+ languages",
-          footerLink: [
-            {
-              name: "Live Demo",
-              url: "https://rasheul-albab-stem-solver.netlify.app/"
-            },
-            {
-              name: "GitHub",
-              url: "https://github.com/rashedulalbab253/Bengali-with-100_languages-math-physics-chemistry-problem-solver-system"
-            }
-          ]
+            "Developed a microcontroller-based smart energy metering system.\nFocused on real-time voltage/current monitoring and efficient data acquisition."
         },
         {
-          projectName: "AI-Powered Smart Exam Platform",
+          projectName: "Renewable Energy Feasibility Study using SAM (2024)",
+          projectSubtitle: "Renewable Energy System Lab",
           projectDesc:
-            "A scalable platform using FastAPI and Groq Llama 3 for automated grading, real-time anti-cheat security, and crash-resilient exam sessions.",
-          footerLink: [
-            {
-              name: "Live Demo",
-              url: "https://rashe-ai-powered-exam-system.onrender.com/"
-            },
-            {
-              name: "GitHub",
-              url: "https://github.com/rashedulalbab253/GenAI-Assessment-Engine"
-            }
-          ]
-        },
+            "Conducted technical and financial analysis of solar and wind systems.\nEvaluated system performance, cost-effectiveness, and feasibility using SAM software."
+        }
+      ]
+    },
+    {
+      categoryName: "Robotics & Embedded Systems",
+      categoryIcon: "fas fa-robot",
+      style: {
+        color: "#2196F3"
+      },
+      projects: [
         {
-          projectName: "Multi Agent Research Assistant (CrewAI)",
+          projectName: "Line Following Robot (Apr '23 — Jul '23)",
+          projectSubtitle: "Technoventure 2.0 Robotics Competition",
           projectDesc:
-            "Automates complex research workflows, analysis, and structured report generation using a modular multi-agent system.",
+            "Built and programmed an autonomous robot using sensor-based path detection.\nImplemented real-time motion control for competition-level performance.",
           footerLink: [
             {
-              name: "GitHub",
-              url: "https://github.com/rashedulalbab253/Rag-powered-multiagent-RA"
+              name: "View",
+              url: "https://drive.google.com/file/d/1QJSPbp2C3cACnmFn9G0fvTGAuRCkOmfI/view?usp=sharing"
             }
           ]
         }
       ]
     },
     {
-      categoryName: "Healthcare AI",
-      categoryIcon: "fas fa-heartbeat",
+      categoryName: "IoT & Hardware Systems",
+      categoryIcon: "fas fa-microchip",
       style: {
-        color: "#009688"
+        color: "#607D8B"
       },
       projects: [
         {
-          projectName: "MediPredict-X: A Multi-Modal Framework for Early Disease Risk Stratification using Ensemble Learning and LLMs",
+          projectName: "Environmental Data Logger (2024)",
           projectDesc:
-            "A Multi-Modal Framework for Early Disease Risk Stratification using Ensemble Learning and LLMs.",
+            "Designed and implemented a real-time environmental monitoring system.\nFeatures ESP32 integration and cloud-based data logging.",
           footerLink: [
-            {
-              name: "Live Demo",
-              url: "https://medical-multi-disease-risk-assessme.vercel.app"
-            },
-            {
-              name: "GitHub",
-              url: "https://github.com/rashedulalbab253/Medical-Multi-Disease-Risk-Assessment-System"
-            }
+            { name: "View Report", url: "/projects/IOT_bASED_DATA_LOGGER_alamin.pdf" }
           ]
         },
         {
-          projectName: "Multi-Agent Healthcare Assistant",
+          projectName: "Water Quality Monitoring System (2024)",
           projectDesc:
-            "An advanced agentic multi-modal AI system for autonomous radiology, leveraging specialized grounding techniques and reasoning to enhance diagnostic accuracy and clinical decision support.",
+            "Developed an IoT system for measuring pH, turbidity, TDS, and temperature.\nEnables real-time data logging and remote monitoring capabilities.",
           footerLink: [
             {
-              name: "GitHub",
-              url: "https://github.com/rashedulalbab253/Multi-Agent-Healthcare-Assistant_using_Langraph"
-            }
-          ]
-        },
-        {
-          projectName: "Medibot AI: Retrieval-Grounded Clinical Assistant",
-          projectDesc:
-            "RAG-powered clinical chatbot orchestrating LLMs and vector retrieval for domain-grounded medical answers on AWS.",
-          footerLink: [
-            { name: "Live Demo", url: "https://rag-based-medibot.onrender.com/" },
-            {
-              name: "GitHub",
-              url: "https://github.com/rashedulalbab253/Medibot_with-LLMs-LangChain-Pinecone-Flask-AWS"
-            }
-          ]
-        },
-        {
-          projectName:
-            "DermatoScan AI: End-to-End Skin Cancer Classification System",
-          projectDesc:
-            "End-to-end skin lesion classification systems achieving 97%+ accuracy using custom CNN architectures (LesionNet) and EfficientNet-B3.",
-          footerLink: [
-            {
-              name: "Live Demo",
-              url: "https://rashed-dermatoscan-ai.onrender.com/"
-            },
-            {
-              name: "GitHub",
-              url: "https://github.com/rashedulalbab253/DermatoScan-End-to-End-AI"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      categoryName: "Multimodal NLP & Speech",
-      categoryIcon: "fas fa-microphone-alt",
-      style: {
-        color: "#FF5722"
-      },
-      projects: [
-        {
-          projectName:
-            "BanglaVox AI: Context-Aware Neural Speech Translation System",
-          projectDesc:
-            "An industry-grade English-Bengali NMT ecosystem featuring an 8-turn context memory buffer and sub-500ms latency optimized on Groq LPU. Deployed across Edge (Desktop App) and Cloud (Vercel Serverless) with full CI/CD.",
-          footerLink: [
-            {
-              name: "GitHub",
-              url: "https://github.com/rashedulalbab253/Real-time-speech-translation-system"
-            }
-          ]
-        },
-        {
-          projectName: "AgroGPT: Intelligent Multilingual Agri-Advisory System",
-          projectDesc:
-            "A specialized multilingual voice-enabled AI advisor for agriculture, helping farmers overcome language barriers to access expert agricultural knowledge and pest management advice.",
-          footerLink: [
-            {
-              name: "Live Demo",
-              url: "https://agrogpt-frontend-3.onrender.com/"
-            },
-            {
-              name: "GitHub",
-              url: "https://github.com/rashedulalbab253/AgroGPT-Multilingual-Voice-Chat"
-            }
-          ]
-        },
-        {
-          projectName:
-            "OmniServe AI – Context-Aware Real-Time Voice Customer Support Platform",
-          projectDesc:
-            "Built a context-aware, real-time voice customer support platform capable of handling complex queries with low latency, enhancing user engagement and streamlining support operations.",
-          footerLink: [
-            {
-              name: "Live Demo",
-              url: "https://customer-support-voce-agent.onrender.com/"
-            },
-            {
-              name: "GitHub",
-              url: "https://github.com/rashedulalbab253/Customer_voice_agent"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      categoryName: "Computer Vision",
-      categoryIcon: "fas fa-eye",
-      style: {
-        color: "#3F51B5"
-      },
-      projects: [
-        {
-          projectName:
-            "BengalVision ALPR: AI-Powered Bangla Number Plate Recognition & Detection System",
-          projectDesc:
-            "Real-time detection and recognition of Bangladeshi vehicle number plates using YOLOv11 and custom OCR, optimized with OpenVINO for edge deployment.",
-          footerLink: [
-            { name: "Live Demo", url: "https://bangla-alpr-system.onrender.com" },
-            {
-              name: "GitHub",
-              url: "https://github.com/rashedulalbab253/bangla-number-plate-detection-yolov11"
-            }
-          ]
-        },
-        {
-          projectName: "CourtVision: AI Powered Tennis Match Analysis System",
-          projectDesc:
-            "A high-performance system for tennis analytics, performing player tracking, ball detection, and court keypoint estimation.",
-          footerLink: [
-            {
-              name: "GitHub",
-              url: "https://github.com/rashedulalbab253/Tennis_analysis_system_using_YoloV12"
+              name: "View Report",
+              url: "/projects/IoT_based_Water_quality_monitoring_System_alamin.pdf"
             }
           ]
         }
@@ -547,43 +496,51 @@ const bigProjects = {
       projects: [
         {
           projectName:
-            "Feasibility Study for a Small-Scale PV Project in North Baghbari,Sylhet",
+            "Small-Scale PV Feasibility Study (2024)",
           projectDesc:
-            "Performed a techno-economic feasibility analysis of solar PV and wind energy systems using NREL's SAM, integrating weather and location data to evaluate system performance.",
+            "Performed a techno-economic feasibility analysis of solar PV and wind systems.\nIntegrated weather and location data to evaluate system performance.",
           footerLink: [
             {
               name: "View Report",
-              url: "/projects/Renewable_Energy_System_Project.pdf"
+              url: "/projects/Renewable_Energy_System_Project_alamin.pdf"
             }
           ]
         }
       ]
     },
     {
-      categoryName: "IoT & Hardware Systems",
-      categoryIcon: "fas fa-microchip",
+      categoryName: "Industrial Automation & Control Systems",
+      categoryIcon: "fas fa-industry",
       style: {
-        color: "#607D8B"
+        color: "#E91E63"
       },
       projects: [
         {
-          projectName: "IoT Based Environmental Data Logger",
+          projectName: "PLC & SCADA-Based Process Automation (2024)",
+          projectSubtitle: "TICI, Narsingdi",
           projectDesc:
-            "Designed and implemented a real-time environmental monitoring system using ESP32 and multiple sensors with cloud-based data logging.",
-          footerLink: [
-            { name: "View Report", url: "/projects/IOT_bASED_DATA_LOGGER.pdf" }
-          ]
+            "Designed AC/DC motor control systems (DOL, star–delta, forward–reverse).\nDeveloped PLC ladder logic and integrated SCADA for real-time monitoring and sequential control."
         },
         {
-          projectName: "IoT Based Water Quality Monitoring System",
+          projectName: "Automated Goods Handling Conveyor System (2024)",
+          projectSubtitle: "TICI, Narsingdi",
           projectDesc:
-            "Developed an IoT-based water quality monitoring system using Arduino and sensors (pH, turbidity, TDS, temperature) to measure key water parameters in real time, with data logging and remote monitoring capabilities.",
-          footerLink: [
-            {
-              name: "View Report",
-              url: "/projects/IoT_based_Water_quality_monitoring_System.pdf"
-            }
-          ]
+            "Designed a motor-driven conveyor with reversible belt motion for industrial material handling.\nImplemented forward–reverse control for efficient operation."
+        }
+      ]
+    },
+    {
+      categoryName: "Industrial Training & Practical Systems",
+      categoryIcon: "fas fa-tools",
+      style: {
+        color: "#795548"
+      },
+      projects: [
+        {
+          projectName: "HVAC & Boiler Maintenance Training (2024)",
+          projectSubtitle: "Factory Training",
+          projectDesc:
+            "Performed maintenance and performance evaluation of HVAC, air filtration, and boiler systems.\nAnalyzed operational efficiency and safety parameters in industrial environments."
         }
       ]
     }
@@ -592,219 +549,163 @@ const bigProjects = {
   // Legacy flat structure for backward compatibility
   projects: [
     {
-      projectName: "MediPredict-X: A Multi-Modal Framework for Early Disease Risk Stratification using Ensemble Learning and LLMs",
+      projectName: "Environmental Data Logger (2024)",
       projectDesc:
-        "A Multi-Modal Framework for Early Disease Risk Stratification using Ensemble Learning and LLMs.",
-      footerLink: [
-        {
-          name: "Live Demo",
-          url: "https://medical-multi-disease-risk-assessme.vercel.app"
-        },
-        {
-          name: "GitHub",
-          url: "https://github.com/rashedulalbab253/Medical-Multi-Disease-Risk-Assessment-System"
-        }
-      ]
-    },
-    {
-      projectName: "Bangladesh E-Passport AI Advisor",
-      projectDesc:
-        "Developed a smart, multi-agent AI system (CrewAI + Gemini/OpenAI) that guides users through Bangladesh passport applications with precise rules, fees, and localized reporting. Deployed as a Streamlit application with a focus on localized rules and multi-agent coordination.",
-      footerLink: [
-        {
-          name: "Live Demo",
-          url: "https://rashedulalbab253-amar-epassport-agent-app-t50hdb.streamlit.app/"
-        },
-        {
-          name: "GitHub",
-          url: "https://github.com/rashedulalbab253/Bangladesh-E-Passport-AI-Advisor"
-        }
-      ]
-    },
-    {
-      projectName: "Multi-Agent Healthcare Assistant",
-      projectDesc:
-        "Developed an agentic multi-modal AI system for autonomous radiology, featuring advanced grounding mechanisms and clinical reasoning. Integrated specialized medical LLMs with vision encoders to provide explainable diagnostic insights and cross-modality data synthesis for radiology workflows.",
-      footerLink: [
-        {
-          name: "GitHub",
-          url: "https://github.com/rashedulalbab253/Multi-Agent-Healthcare-Assistant_using_Langraph"
-        }
-      ]
-    },
-    {
-      projectName: "AgroGPT: Intelligent Multilingual Agri-Advisory System",
-      projectDesc:
-        "Built an intelligent multilingual agri-advisory system that uses voice interaction to bridge the gap between farmers and expert agricultural guidance. Supporting various local languages, it provides real-time advice on crop management, weather impacts, and pest control.",
-      footerLink: [
-        {
-          name: "Live Demo",
-          url: "https://agrogpt-frontend-3.onrender.com/"
-        },
-        {
-          name: "GitHub",
-          url: "https://github.com/rashedulalbab253/AgroGPT-Multilingual-Voice-Chat"
-        }
-      ]
-    },
-    {
-      projectName:
-        "OmniServe AI – Context-Aware Real-Time Voice Customer Support Platform",
-      projectDesc:
-        "Built a context-aware, real-time voice customer support platform capable of handling complex queries with low latency, enhancing user engagement and streamlining support operations.",
-      footerLink: [
-        {
-          name: "Live Demo",
-          url: "https://customer-support-voce-agent.onrender.com/"
-        },
-        {
-          name: "GitHub",
-          url: "https://github.com/rashedulalbab253/Customer_voice_agent"
-        }
-      ]
-    },
-    {
-      projectName: "IoT Based Environmental Data logger(ESP32)",
-      projectDesc:
-        "Designed and implemented a realtime environmental monitoring system using ESP32 and multiple sensors, enabling cloud based data logging and remote access through Google Sheets.",
+        "Designed and implemented a real-time environmental monitoring system using ESP32.\nEnables cloud-based data logging and remote access through Google Sheets.",
       footerLink: [
         {
           name: "View Report",
-          url: "/projects/IOT_bASED_DATA_LOGGER.pdf"
+          url: "/projects/IOT_bASED_DATA_LOGGER_alamin.pdf"
         }
       ]
     },
     {
-      projectName: "IoT Based Water Quality Monitoring System",
+      projectName: "Water Quality Monitoring System (2024)",
       projectDesc:
-        "Developed an IoT-based water quality monitoring system using Arduino and sensors (pH, turbidity, TDS, temperature) to measure key water parameters in real time, with data logging and remote monitoring capabilities.",
+        "Developed an IoT-based system using Arduino and multiple sensors.\nMeasures key water parameters in real time with remote monitoring capabilities.",
       footerLink: [
         {
           name: "View Report",
-          url: "/projects/IoT_based_Water_quality_monitoring_System.pdf"
+          url: "/projects/IoT_based_Water_quality_monitoring_System_alamin.pdf"
         }
       ]
     },
     {
-      projectName:
-        "Feasibility Study for a small-scale PV project in North Baghbari,Sylhet",
+      projectName: "Small-Scale PV Feasibility Study (2024)",
       projectDesc:
-        "Performed a techno economic feasibility analysis of solar PV and wind energy systems using NREL s System Advisor Model(SAM), integrating weather, location, and energy yield data to evaluate system performance and local renewable energy viability..",
+        "Performed a techno-economic feasibility analysis of solar and wind systems.\nIntegrated weather and location data to evaluate system performance and viability.",
       footerLink: [
         {
           name: "View Report",
-          url: "/projects/Renewable_Energy_System_Project.pdf"
+          url: "/projects/Renewable_Energy_System_Project_alamin.pdf"
         }
       ]
     },
     {
-      projectName: "Medibot AI: Retrieval-Grounded Clinical Assistant",
+      projectName: "Three-Phase Inverter System using IGBT and Arduino (2024)",
       projectDesc:
-        "Developed a RAG-powered clinical chatbot on AWS with Docker, orchestrating LLMs and vector retrieval for reliable, domain-grounded medical answers.",
-      footerLink: [
-        {
-          name: "Live Demo",
-          url: "https://rag-based-medibot.onrender.com/"
-        },
-        {
-          name: "GitHub",
-          url: "https://github.com/rashedulalbab253/Medibot_with-LLMs-LangChain-Pinecone-Flask-AWS"
-        }
-      ]
+        "Designed a DC–AC inverter using IGBT with SPWM control for motor drives.\nImplemented Arduino switching control and evaluated performance under load conditions."
     },
     {
-      projectName: "Albab ExamAI – Real-time AI-powered Exam Management System",
+      projectName: "Smart Energy Meter (Dec 2024 — Jan 2025)",
       projectDesc:
-        "Developed an AI-powered Exam Management System using FastAPI, Groq Llama 3, and Docker for automated grading of MCQs and subjective answers. Implemented real-time feedback, anti-cheat security, and crash-resilient exam sessions. Deployed a scalable production-ready platform with background evaluation queues and CI/CD pipelines.",
-      footerLink: [
-        {
-          name: "Live Demo",
-          url: "https://rashe-ai-powered-exam-system.onrender.com/"
-        },
-        {
-          name: "GitHub",
-          url: "https://github.com/rashedulalbab253/GenAI-Assessment-Engine"
-        }
-      ]
+        "Developed a microcontroller-based smart energy metering system.\nFocused on real-time voltage/current monitoring and efficient data acquisition."
     },
     {
-      projectName: "MathRAG AI – Reliable Multimodal Math Problem Solver",
+      projectName: "Renewable Energy Feasibility Study using SAM (2024)",
       projectDesc:
-        "Built an end-to-end AI Math Mentor that can solve math problems using multimodal inputs (image, audio, text), explain solutions step-by-step, and improve over time using memory and human feedback.",
-      footerLink: [
-        {
-          name: "GitHub",
-          url: "https://github.com/rashedulalbab253/AI_math_solver_system_"
-        }
-      ]
+        "Conducted technical and financial analysis of solar PV and wind energy systems.\nEvaluated system performance, cost-effectiveness, and feasibility using SAM software."
     },
     {
-      projectName:
-        "BengalVision ALPR: AI-Powered Bangla Number Plate Recognition & Detection System",
+      projectName: "PLC & SCADA-Based Process Automation (TICI, Narsingdi | 2024)",
       projectDesc:
-        "Engineered an AI-powered ALPR system, BengalPlateAI, for real-time detection and recognition of Bangladeshi vehicle number plates using YOLOv11. Built FastAPI dashboards featuring confidence tuning and session tracking, with Docker-based deployment for production readiness. Optimized inference across PyTorch, ONNX, and OpenVINO, achieving approximately 92% accuracy in complex urban environments.",
-      footerLink: [
-        {
-          name: "Live Demo",
-          url: "https://bangla-alpr-system.onrender.com"
-        },
-        {
-          name: "GitHub",
-          url: "https://github.com/rashedulalbab253/bangla-number-plate-detection-yolov11"
-        }
-      ]
+        "Designed AC/DC motor control systems (DOL, star–delta, forward–reverse).\nDeveloped PLC ladder logic and integrated SCADA for real-time monitoring and sequential control."
     },
     {
-      projectName: "CourtVision:AI Powered Tennis Match Analysis System",
+      projectName: "Automated Goods Handling Conveyor System (Jan 2024)",
       projectDesc:
-        " Engineered a real-time AI system for tennis analytics, performing player detection, ball tracking, and court keypoint estimation using YOLO and ResNet models",
-      footerLink: [
-        {
-          name: "GitHub",
-          url: "https://github.com/rashedulalbab253/Tennis_analysis_system_using_YoloV12"
-        }
-      ]
+        "Designed a motor-driven conveyor with reversible belt motion for industrial material handling.\nImplemented forward–reverse control for efficient operation."
     },
     {
-      projectName: "Multi Agent Research Assistant(CrewAi )",
+      projectName: "HVAC & Boiler Maintenance Training (2024)",
       projectDesc:
-        " Created a modular multi-agent research assistant using CrewAI to automate research, analysis, and report generation, producing structured, high-quality outputs efficiently",
-      footerLink: [
-        {
-          name: "GitHub",
-          url: "https://github.com/rashedulalbab253/Ai_Research_Assitant"
-        }
-      ]
+        "Performed maintenance and performance evaluation of HVAC, air filtration, and boiler systems.\nAnalyzed operational efficiency and safety parameters in industrial environments."
     },
     {
-      projectName:
-        "DermatoScan AI: End-to-End Skin Cancer Classification System",
+      projectName: "Line Following Robot (Technoventure 2.0 | Apr — Jul 2023)",
       projectDesc:
-        " DermatoScan AI is an end-to-end skin lesion classification system using EfficientNet-B3 (PyTorch) for multi-class diagnosis.Built with FastAPI, Docker, and CI/CD, it delivers secure, production-ready medical AI deployment",
+        "Built and programmed an autonomous robot using sensor-based path detection.\nImplemented real-time motion control for competition-level performance.",
       footerLink: [
         {
-          name: "Live Demo",
-          url: "https://rashed-dermatoscan-ai.onrender.com/"
-        },
-        {
-          name: "GitHub",
-          url: "https://github.com/rashedulalbab253/DermatoScan-End-to-End-AI"
-        }
-      ]
-    },
-    {
-      projectName: "Multi-Format Document Retrieval and Citation Platform",
-      projectDesc:
-        "Open-source NotebookLM Clone: A document-grounded AI assistant that answers questions with accurate citations from your uploaded documents (PDF, text, audio, YouTube, web). Built with Streamlit, ChromaDB, RAG, and multi-format support. Features conversational context, AI podcast generation, and a clean NotebookLM-inspired UI.",
-      footerLink: [
-        {
-          name: "GitHub",
-          url: "https://github.com/rashedulalbab253/DocMind-AI"
+          name: "View",
+          url: "https://drive.google.com/file/d/1QJSPbp2C3cACnmFn9G0fvTGAuRCkOmfI/view?usp=sharing"
         }
       ]
     }
   ],
   display: true // Set false to hide this section, defaults to true
+};
+
+
+// Awards Section
+const awardsSection = {
+  display: true,
+  title: "Awards",
+  subtitle:
+    "Recognition for academic excellence, scholarships, and leadership contributions.",
+  awards: [
+    {
+      title: "Academic Distinction Award",
+      organization:
+        "Dept. of EEE, Shahjalal University of Science and Technology",
+      description:
+        "Awarded for achieving a CGPA of 3.88/4.00 and ranking in the top 3% of the class.",
+      certificateUrl: "/projects/Academic Distinction Award.pdf"
+    },
+    {
+      title: "Merit-Based Scholarship",
+      organization:
+        "Dept. of EEE, Shahjalal University of Science and Technology",
+      description:
+        "Consistently received throughout all semesters of the degree program, recognizing sustained academic excellence and outstanding performance.",
+      certificateUrl: "/projects/Merit based Scholarship.pdf"
+    },
+    {
+      title: "Best Campus Ambassador",
+      organization: "Bangladesh Environment Olympiad 2024",
+      description:
+        "Recognized for outstanding outreach, engagement, and promotion of environmental awareness initiatives.",
+      certificateUrl: "/projects/Best Campus Ambassador Program 2024.pdf"
+    },
+    {
+      title: "Moulana Fakrul Islam Trust Talent Scholarship (2 times)",
+      organization: "Moulana Fakrul Islam Trust",
+      description:
+        "Awarded for academic excellence and merit-based performance in the Talent Grade category.",
+      certificateUrl: "/projects/Moulana Fakrul Islam Trust Scholarship 2013.pdf"
+    }
+  ]
+};
+
+// Leadership Section
+const leadershipSection = {
+  display: true,
+  title: "Leadership & Co-Curricular Activities",
+  subtitle:
+    "Active roles in student organizations, community welfare, and competitive sports.",
+  items: [
+    {
+      role: "Organizing Secretary",
+      organization: "Aowlasher Social Welfare Organization",
+      orgDetails: "(Govt.-registered, Reg. No. 869)",
+      duration: "January 2023 – December 2023",
+      description:
+        "Coordinated organizational activities, managed member engagement, and supported the planning and execution of social welfare initiatives.",
+      certificateUrl: "/projects/Organizing Secretery_md. al amin chy.pdf"
+    },
+    {
+      role: "Publicity Secretary",
+      organization: "Electrical and Electronic Engineering Association",
+      duration: "March 2024 – June 2025",
+      description:
+        "Managed publicity campaigns, promoted departmental events, and coordinated organizational communication activities.",
+      certificateUrl: "/projects/Publicity Secretary of EEE association.pdf"
+    },
+    {
+      role: "Champion — Engineer Football League",
+      duration: "December 2023",
+      description:
+        "Played as Left Forward and contributed to the team’s championship-winning performance.",
+      certificateUrl: "https://drive.google.com/drive/folders/1PPGXCIPJNbKU9CXDdtluwveRZJl-Y1ox?dmr=1&ec=wgc-drive-%5Bmodule%5D-goto"
+    },
+    {
+      role: "Champion — Estrada: The Glory Indoor Football Tournament",
+      duration: "March 2024",
+      description:
+        "Played as Left Forward and contributed to the team’s championship-winning performance.",
+      certificateUrl: "https://drive.google.com/drive/folders/1PPGXCIPJNbKU9CXDdtluwveRZJl-Y1ox?dmr=1&ec=wgc-drive-%5Bmodule%5D-goto"
+    }
+  ]
 };
 
 // Achievement Section
@@ -874,11 +775,11 @@ const researchSection = {
   title: "Research",
   subtitle: "Research Interests",
   interests: [
-    "AI in Healthcare",
-    "AI for Renewable Energy and Smart Power Systems",
-    "Computer Vision and Deep Learning",
-    "Natural Language Processing and Large Language Models",
-    "AI in Electromagnetic and RF Systems"
+    "Metasurfaces and Metamaterials",
+    "Nanophotonics and Optical Manipulation",
+    "RF and Microwave Engineering",
+    "Machine Learning in Electromagnetics",
+    "Explainable AI in Power Systems"
   ],
   sections: [
     {
@@ -886,16 +787,15 @@ const researchSection = {
       projects: [
         {
           projectName:
-            "LesionNet: A Custom CNN Model for Accurate Multiclass Classification of Dermoscopic Skin Lesions",
-          projectDesc: `Skin cancer is one of the most prevalent and potentially fatal forms of cancer worldwide. The ability to accurately classify different types of skin lesions at an early stage is critical for ensuring timely treatment and improving patient outcomes. This study proposes a deep learning-based approach to automate the classification of dermoscopic images into seven categories of skin lesions, using a custom-designed Convolutional Neural Network (CNN) architecture named LesionNet. The model was trained and evaluated on the HAM10000 dataset, which includes over 10,015 RGB dermoscopic images representing a variety of dermatological conditions. To address the dataset’s inherent class imbalance, Random Oversampling was applied only to the training data to avoid biasing the test set. Comprehensive image preprocessing, including resizing, normalization, and augmentation (such as rotation, flipping, and zoom), was performed to improve the model’s generalizability. In addition, Exploratory Data Analysis (EDA) was conducted on associated metadata to observe trends in class distribution, patient age, gender, and lesion location. The LesionNet model was trained using categorical cross-entropy loss and optimized with the Adam optimizer. Evaluation was carried out using standard multiclass performance metrics, including accuracy, precision, recall, and F1-score. The proposed model, LesionNet, achieved a test accuracy of 97.12%, showing robust classification performance across all seven lesion types. These results demonstrate that with careful preprocessing and targeted model design, a lightweight customized CNN like LesionNet can serve as an effective tool for automated skin lesion classification, aiding in the development of reliable diagnostic support systems.
-
-Keywords: Skin Lesions, Multiclass Classification, LesionNet, Convolutional Neural Network (CNN), Deep learning, Medical Image Analysis, Dermoscopy, Image Augmentation.
-`,
+            "Hyperbolic Metamaterial Induced Optical Pulling of Single and Clustered Nanorods with Distinct Properties",
+          projectDesc: "In the field of optical manipulation, the generation of optical pulling forces using hyperbolic metamaterials (HMMs) has emerged as a promising technique for counterintuitive light-matter interactions. This study investigates the optical pulling behavior of plasmonic, chiral, and dielectric nanorods positioned on an HMM under a time-harmonic plane-polarized laser beam incident along the “+Z” axis to the “–Z” axis direction. This research is divided into two primary configurations. In the first case, plasmonic, chiral, and dielectric nanorods are arranged in a heterogeneous cluster over the HMMs and analyzed for the optical force response under three environmental conditions: fully immersed in water, partially immersed (half air–half water), and fully in air. Full-wave simulations reveal that in all three environments, all the objects (plasmonic, chiral, dielectric) nanorods consistently experience an optical pulling force at the 10−20 N scales for clustered configuration. In the second case, each nanorod type was independently placed on the same HMMs substrate within a full-air medium and investigated their force behaviors, while the plasmonic experience 100 times more than others for the single setup, which is 10−19 N ranges. Like the case of the cluster, three nanorods alone demonstrate a stable optical pulling force, also getting the pulling force with the variation of length, radius, and distance between them, which makes this optical setup more practical. It is important to note that plasmonic behavior is highly sensitive to the spatial arrangement of the nanostructures, whereas the optical response of dielectric materials is more dependent on their physical length. This study highlights the robustness of optical pulling force generation, as aforementioned, all nanorods using a simplified HMMs structure, and offers a pathway for scalable optical manipulation of anisotropic nanostructures, particularly in sensing and nanophotonic applications.",
+          figureImg: "https://via.placeholder.com/800x400?text=Thesis+Figure+Placeholder",
+          figureDesc: "Figure 1: Illustration of optical pulling forces using hyperbolic metamaterials (HMMs).",
           isThesis: true,
           footerLink: [
             {
               name: "View Book",
-              url: "https://objectstorage.ap-dcc-gazipur-1.oraclecloud15.com/n/axvjbnqprylg/b/V2Ministry/o/office-sec/2024/12/bd3cc794feca4a2bb611ce35e798f511.pdf"
+              url: "/projects/Thesis_Book_final_latest_print_version.pdf"
             }
           ]
         }
@@ -903,115 +803,122 @@ Keywords: Skin Lesions, Multiclass Classification, LesionNet, Convolutional Neur
     },
     {
       title: "Publications",
-      projects: [
+      subsections: [
         {
-          projectName:
-            "Explainable Machine Learning for Multi-Class Power Quality Disturbance Classification Using SHAP and Feature Importance Analysis",
-          projectDesc: `The reliability and efficiency of modern power systems are negatively impacted by power quality disturbances (PQDs), such as voltage sags, swells, harmonics, and transients. Hence, rapid and accurate classification of PQDs is essential to prevent equipment failures and to ensure stable grid operation. This paper proposes an explainable machine learning (ML) framework for multi-class PQD classification. The framework combines traditional algorithms, Logistic Regression (LR), Decision Tree (DT), Random Forest (RF), Support Vector Machine (SVM), and XGBoost, with a one-dimensional Convolutional Neural Network (1D-CNN). The dataset was preprocessed by handling negative THD values, capping outliers, performing feature selection, encoding categorical variables, and normalizing numerical features. Model interpretability was ensured using feature importance analysis and SHAP values. The experimental findings indicate that LR achieved the maximum accuracy of 99.79% across the five disturbance categories. Beyond predictive performance, the framework enhances transparency by identifying the most influential features including Total Harmonic Distortion (THD), RMS Voltage, and Peak Voltage. The findings demonstrate that integrating robust preprocessing, highperforming models, and explainability methods offers a reliable and interpretable solution for detecting power disturbances in advanced grid networks and present-day energy infrastructures. 
-
-Keywords—Power quality disturbances, Power quality monitoring, Machine learning, Explainable AI (XAI), SHAP, 1D-CNN, Smart grids
-
-`,
-          publishedAt: "Accepted at: 28th ICCIT 2025(IEEE)",
-          venueLogo:
-            "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0MDAgMTAwIj48ZyBmaWxsPSIjZmZmIj48cGF0aCBkPSJNMjAgMEwwIDIwTDIwIDQwTDQwIDIwTDIwIDBaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgyMCwyNSkiLz48dGV4dCB4PSI4MCIgeT0iNTUiIGZvbnQtZmFtaWx5PSJBcmlhbCxIZWx2ZXRpY2Esc2Fucy1zZXJpZiIgZm9udC1zaXplPSI0NSIgZm9udC13ZWlnaHQ9ImJvbGQiPklFRUU8L3RleHQ+PHRleHQgeD0iODAiIHk9Ijg1IiBmb250LWZhbWlseT0iQXJpYWwsSGVsdmV0aWNhLHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTYiPkFkdmFuY2luZyBUZWNobm9sb2d5IGZvciBIdW1hbml0eTwvdGV4dD48L2c+PC9zdmc+",
-          venueLink: "https://iccit.org.bd/2025/",
-          footerLink: [
+          title: "Live",
+          projects: [
             {
-              name: "View Paper",
-              url: "https://www.researchgate.net/publication/399680213_Explainable_Machine_Learning_for_Multi-Class_Power_Quality_Disturbance_Classification_Using_SHAP_and_Feature_Importance_Analysis"
-            }
-          ]
-        },
-
-        {
-          projectName:
-            "Quantifying the Relationship between Socioeconomic Status and Parent-Child Attachment on Adolescents Through Machine Learning",
-          projectDesc: `Parent-child relationships have a significant impact on adolescent development, influencing social cohesion, intellectual growth, and emotional well-being. Adolescence entails rapid biological, cognitive, and neurodevelopmental changes that profoundly impact psychosocial functioning and interpersonal dynamics. Socioeconomic status (SES) is a crucial factor influencing parent-child relationships, although quantifying how parentchild attachment influences SES remains challenging. To bridge this gap, we propose a Machine Learning (ML) framework to classify SES based on parent-child attachment factors, by using the publicly available dataset ”The effect of parent-child attachment on adolescents’ belief in a just world”, which consists of survey data from 239 families (478 samples). Following rigorous preprocessing—including Principal Component Analysis (PCA) for feature selection, z-score normalization, outlier rejection, and missing value imputation—seven classifiers (Decision Tree, Random Forest, k-Nearest Neighbors, Support Vector Machine, AdaBoost, XGBoost, and Logistic Regression) were trained and evaluated using k-fold cross-validation. Upsampling techniques were used to reduce class imbalance, which significantly enhanced model performance. XGBoost demonstrated the efficiency of ensemble approaches in SES classification by achieving the highest accuracy of 89.00% and AUC-ROC (98.44%), followed by Random Forest (88.40%) and Decision Tree (87.33%). Our findings indicate that attachment dimensions—particularly trust, communication, and alienation in both maternal and paternal relationships—are closely associated with SES categories. These findings provide a data-driven approach for creating focused interventions to improve the well-being of adolescents and reduce socioeconomic inequities. 
-
-Index Terms—Socioeconomic Status (SES), Parent-Child Relationships, Machine Learning, Principal Component Analysis (PCA), XGBoost, Adolescent development.
-
-`,
-          publishedAt: "Accepted at: 28th ICCIT 2025(IEEE)",
-          venueLogo:
-            "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0MDAgMTAwIj48ZyBmaWxsPSIjZmZmIj48cGF0aCBkPSJNMjAgMEwwIDIwTDIwIDQwTDQwIDIwTDIwIDBaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgyMCwyNSkiLz48dGV4dCB4PSI4MCIgeT0iNTUiIGZvbnQtZmFtaWx5PSJBcmlhbCxIZWx2ZXRpY2Esc2Fucy1zZXJpZiIgZm9udC1zaXplPSI0NSIgZm9udC13ZWlnaHQ9ImJvbGQiPklFRUU8L3RleHQ+PHRleHQgeD0iODAiIHk9Ijg1IiBmb250LWZhbWlseT0iQXJpYWwsSGVsdmV0aWNhLHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTYiPkFkdmFuY2luZyBUZWNobm9sb2d5IGZvciBIdW1hbml0eTwvdGV4dD48L2c+PC9zdmc+",
-          venueLink: "https://iccit.org.bd/2025/",
-          footerLink: [
+              projectName: "Optical Sorting of Nanorods via Chiral Dielectric Hyperbolic Metamaterials in Clustered Configurations",
+              projectDesc: "In pharmaceutical industries, the classification of plasmonic, dielectric, and chiral nanorods is traditionally achieved through sophisticated laboratory setups, chemical treatments, and multi-step processes. This study introduces an innovative and unique optical sorting technique for nanorods with significant optical force having ~10-20N ranges, enabling the classification of nanorods based on their distinct optical force responses. Pushing effects are generally experienced by objects interacting with light; however, pulling forces or lateral movements can also be exhibited, depending on the interaction. Notably, unique force-direction behaviors are generated for different nanorods simultaneously using a single experimental setup. The proposed optical sorting mechanism is demonstrated using Chiral Dielectric Hyperbolic Metamaterials (CDHMMs) as a substrate. A linearly polarized plane wave, incident at a 90 degree angle, is used to generate distinct responses from three types of nanorods: SiO2 (dielectric), chiral nanorods, and Au (plasmonic). Lateral forces are displayed by dielectric and chiral nanorods along distinct axes, with the forces on dielectric nanorods being less pronounced. Plasmonic nanorods exhibit substantial optical pushing forces. These effects are caused by the interplay of material characteristics, such as refractive index, chirality, and plasmonic resonance, with the incident light. Through this approach, a sustainable and environmentally friendly alternative to conventional chemical-based sorting techniques is provided, reducing reliance on toxic substances and expensive processes.",
+              figureImg: "https://via.placeholder.com/800x400?text=Paper+Figure+Placeholder",
+              figureDesc: "Figure 1: Optical sorting mechanism demonstrated using CDHMMs as a substrate.",
+              publishedAt: "Published in Advance Engineering Research, Part of Springer Nature, 2025",
+              venueLogo: "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0MDAgMTAwIj48ZyBmaWxsPSIjZmZmIj48dGV4dCB4PSIyMCIgeT0iNjUiIGZvbnQtZmFtaWx5PSJBcmlhbCxIZWx2ZXRpY2Esc2Fucy1zZXJpZiIgZm9udC1zaXplPSI0NSIgZm9udC13ZWlnaHQ9ImJvbGQiPlNwcmluZ2VyIE5hdHVyZTwvdGV4dD48L2c+PC9zdmc+",
+              footerLink: [
+                {
+                  name: "View Paper",
+                  url: "/projects/Live_paper_1.pdf"
+                }
+              ]
+            },
             {
-              name: "View Paper",
-              url: "https://www.researchgate.net/publication/399871831_Quantifying_the_Relationship_between_Socioeconomic_Status_and_Parent-Child_Attachment_on_Adolescents_through_Machine_Learning"
-            }
-          ]
-        },
-        {
-          projectName:
-            "Enhancing Wind Farm Operational Efficiency Through Power Output Classification Using MLP and Ensemble Models",
-          projectDesc: `Accurately forecasting wind turbine power output is challenging due to the complex and non-linear patterns present in wind farm operational data. Conventional approaches largely adopt regression-based forecasting, which, while effective in predicting continuous values, often lacks the interpretability required for direct operational decision-making. In this work, we reframe the problem as a multi-class classification task, categorizing power output into discrete levels, low, medium, and high, to provide actionable insights for identifying underperforming turbines and optimizing maintenance schedules. A curated Supervisory Control and Data Acquisition (SCADA) dataset was processed through a rigorous pipeline, including the handling of physically impossible negative power values, outlier capping, feature normalization, and label encoding. Five Machine Learning (ML) models, including Logistic Regression (LR), Random Forest (RF), Gradient Boosting (GB), XGBoost, and a Multilayer Perceptron (MLP), were trained and optimized using Grid Search hyperparameter tuning. The MLP model obtained the highest classification accuracy of 93.51%, marginally outperforming the top-performing ensemble models. Feature importance analysis revealed that while tree-based models relied heavily on a limited set of features, the MLP distributed its attention more evenly across all inputs. The proposed classification-based framework offers a robust and interpretable alternative to regression-based approaches, providing direct operational benefits for the renewable energy sector. 
-
-Keywords—Wind Turbine, Wind Energy, Machine Learning (ML), Power Output Classification, SCADA Data, Predictive Maintenance, Renewable Energy
-
-
-
-`,
-          publishedAt: "Accepted at: 28th ICCIT 2025(IEEE)",
-          venueLogo:
-            "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0MDAgMTAwIj48ZyBmaWxsPSIjZmZmIj48cGF0aCBkPSJNMjAgMEwwIDIwTDIwIDQwTDQwIDIwTDIwIDBaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgyMCwyNSkiLz48dGV4dCB4PSI4MCIgeT0iNTUiIGZvbnQtZmFtaWx5PSJBcmlhbCxIZWx2ZXRpY2Esc2Fucy1zZXJpZiIgZm9udC1zaXplPSI0NSIgZm9udC13ZWlnaHQ9ImJvbGQiPklFRUU8L3RleHQ+PHRleHQgeD0iODAiIHk9Ijg1IiBmb250LWZhbWlseT0iQXJpYWwsSGVsdmV0aWNhLHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTYiPkFkdmFuY2luZyBUZWNobm9sb2d5IGZvciBIdW1hbml0eTwvdGV4dD48L2c+PC9zdmc+",
-          venueLink: "https://iccit.org.bd/2025/",
-          footerLink: [
+              projectName: "Ultra-Broadband Electromagnetic Control Using a Triple Circular Ring Metasurface: Surface Wave Propagation, Beam Steering, RCS Reduction (50-100 GHz)",
+              projectDesc: "Traditional metasurfaces often face challenges in achieving simultaneous broadband functionality and dynamic adaptability, limiting their application in advanced electromagnetic systems. This paper introduces a cutting-edge metasurface featuring a triple circular ring design, engineered for multifunctional electromagnetic applications. This novel metasurface facilitates seamless strong propagation characteristics, enhanced beam shaping, and ultra-broadband radar cross-section (RCS) reduction using advanced simulation techniques. The proposed metasurface employs a cost-effective FR-4 substrate as its unit cell, demonstrating exceptional electromagnetic wave reflection properties. Across the high-frequency spectrum of 50–100 GHz, the metasurface exhibits amplitude and phase responses comparable to those of a conventional copper plate, except at approximately 91 GHz, where it achieves a significant dip in reflection. Our metasurface efficiently helps to propagate surface waves while maintaining substantial electric field and magnetic field amplitudes of nearly 1 V/m and 5×10^-3 A/m, respectively, contrasting starkly with a standard copper plate, which fails to sustain these fields over the entire surface. Moreover, it demonstrates unparalleled radiation control by redirecting incident energy into a predefined direction (67° in the phi plane) while simultaneously minimizing radiation across a full 360° angular spectrum. Compared to a copper plate, which exhibits an unstable RCS ranging from -20 dB to 0 dB, our metasurface maintains a significantly reduced and stable monostatic RCS of -40 to -30 dB across an ultra-broadband range of 50 GHz. The results were validated through numerical simulations. By leveraging temporal boundaries, our approach establishes a groundbreaking framework for wavefront engineering, offering unprecedented scalability, efficiency, and adaptability. This work surpasses existing metasurface designs and redefines electromagnetic wave manipulation over a broad frequency range. Bridging the gap between intelligent and passive metasurfaces, our findings hold immense potential for stealth technology, radar applications, and next-generation wireless communications. This research sets a new benchmark in metasurface engineering, paving the way for transformative advancements in electromagnetic science and practical implementations.",
+              publishedAt: "Published in arXiv, 2025",
+              venueLogo: "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0MDAgMTAwIj48ZyBmaWxsPSIjZmZmIj48dGV4dCB4PSIyMCIgeT0iNjUiIGZvbnQtZmFtaWx5PSJBcmlhbCxIZWx2ZXRpY2Esc2Fucy1zZXJpZiIgZm9udC1zaXplPSI0NSIgZm9udC13ZWlnaHQ9ImJvbGQiPmFyWGl2PC90ZXh0PjwvZz48L3N2Zz4=",
+              footerLink: [
+                {
+                  name: "View Paper",
+                  url: "https://arxiv.org/abs/2605.08821"
+                }
+              ]
+            },
             {
-              name: "View Paper",
-              url: "https://www.researchgate.net/publication/399763932_Enhancing_Wind_Farm_Operational_Efficiency_Through_Power_Output_Classification_Using_MLP_and_Ensemble_Models"
-            }
-          ]
-        },
-        {
-          projectName:
-            "Time-Dependent Control of Voltage and Current via a Tunable Metasurface",
-          projectDesc: `Metasurfaces have recently attracted significant attention due to their potential use in optics and meta-devices as compact platforms for precise manipulation of electromagnetic waves. In this work, we present a tunable metasurface geometry based on a triple concentric ring configuration that offers superior surface-wave confinement and enhanced reactive control compared with conventional single-ring or patch structures. Based on our designs, the proposed structure achieves controllable voltage and current responses through strong field confinement and rapid impedance modulation along its surface. Although implementation on a cost-effective FR-4 substrate exhibits moderate dielectric loss at high frequencies, the metasurface maintains efficient performance and supports surfacewave transmission at 30 GHz. Under sinusoidal excitation with an input amplitude of 1V at 30 GHz, the device outperforms a copper reference plate, providing approximately 40V of voltage and about 0.8A of current at the microscale across a resistive load. Temporal reconfiguration is enabled by an exponential voltage signal applied to the voltage-controlled switches (VCS), which alternates the surface reactance between capacitive and inductive states within a 20 ns window. The electromagnetic field amplitudes remain stable across the metasurface, and the switching process produces controlled suppression and restoration of power flow. Overall, the metasurface demonstrates tunable, time-dependent electrical control and holds promise for nextgeneration reconfigurable communication, sensing, and energymodulation platforms. 
-
-Index Terms—Metasurface, Voltage Controlled Switch, Temporal modulation, Surface reactance, Temporal boundaries, FR-4 substrate.
-
-`,
-          publishedAt: "Accepted at: 28th ICCIT 2025(IEEE)",
-          venueLogo:
-            "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0MDAgMTAwIj48ZyBmaWxsPSIjZmZmIj48cGF0aCBkPSJNMjAgMEwwIDIwTDIwIDQwTDQwIDIwTDIwIDBaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgyMCwyNSkiLz48dGV4dCB4PSI4MCIgeT0iNTUiIGZvbnQtZmFtaWx5PSJBcmlhbCxIZWx2ZXRpY2Esc2Fucy1zZXJpZiIgZm9udC1zaXplPSI0NSIgZm9udC13ZWlnaHQ9ImJvbGQiPklFRUU8L3RleHQ+PHRleHQgeD0iODAiIHk9Ijg1IiBmb250LWZhbWlseT0iQXJpYWwsSGVsdmV0aWNhLHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTYiPkFkdmFuY2luZyBUZWNobm9sb2d5IGZvciBIdW1hbml0eTwvdGV4dD48L2c+PC9zdmc+",
-          venueLink: "https://iccit.org.bd/2025/",
-          footerLink: [
+              projectName: "Time-Dependent Control of Voltage and Current via a Tunable Metasurface",
+              projectDesc: "Metasurfaces have recently attracted significant attention due to their potential use in optics and meta-devices as compact platforms for precise manipulation of electromagnetic waves. In this work, we present a tunable metasurface geometry based on a triple concentric ring configuration that offers superior surface-wave confinement and enhanced reactive control compared with conventional single-ring or patch structures. Based on our designs, the proposed structure achieves controllable voltage and current responses through strong field confinement and rapid impedance modulation along its surface. Although implementation on a cost-effective FR-4 substrate exhibits moderate dielectric loss at high frequencies, the metasurface maintains efficient performance and supports surfacewave transmission at 30 GHz. Under sinusoidal excitation with an input amplitude of 1 V at 30 GHz, the device outperforms a copper reference plate, providing approximately 40 V of voltage and about 0.8 A of current at the microscale across a resistive load. Temporal reconfiguration is enabled by an exponential voltage signal applied to the voltage-controlled switches (VCS), which alternates the surface reactance between capacitive and inductive states within a 20 ns window. The electromagnetic field amplitudes remain stable across the metasurface, and the switching process produces controlled suppression and restoration of power flow. Overall, the metasurface demonstrates tunable, time-dependent electrical control and holds promise for nextgeneration reconfigurable communication, sensing, and energymodulation platforms.",
+              publishedAt: "Published in IEEE 28th ICCIT, 2025",
+              venueLogo: "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0MDAgMTAwIj48ZyBmaWxsPSIjZmZmIj48cGF0aCBkPSJNMjAgMEwwIDIwTDIwIDQwTDQwIDIwTDIwIDBaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgyMCwyNSkiLz48dGV4dCB4PSI4MCIgeT0iNTUiIGZvbnQtZmFtaWx5PSJBcmlhbCxIZWx2ZXRpY2Esc2Fucy1zZXJpZiIgZm9udC1zaXplPSI0NSIgZm9udC13ZWlnaHQ9ImJvbGQiPklFRUU8L3RleHQ+PHRleHQgeD0iODAiIHk9Ijg1IiBmb250LWZhbWlseT0iQXJpYWwsSGVsdmV0aWNhLHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTYiPkFkdmFuY2luZyBUZWNobm9sb2d5IGZvciBIdW1hbml0eTwvdGV4dD48L2c+PC9zdmc+",
+              venueLink: "https://iccit.org.bd/2025/",
+              footerLink: [
+                {
+                  name: "View Paper",
+                  url: "https://ieeexplore.ieee.org/document/11491809"
+                }
+              ]
+            },
             {
-              name: "View Paper",
-              url: "https://www.researchgate.net/publication/400596439_Time-Dependent_Control_of_Voltage_and_Current_via_a_Tunable_Metasurface"
+              projectName: "Explainable Machine Learning for Multi-Class Power Quality Disturbance Classification Using SHAP and Feature Importance Analysis",
+              projectDesc: "The reliability and efficiency of modern power systems are negatively impacted by power quality disturbances (PQDs), such as voltage sags, swells, harmonics, and transients. Hence, rapid and accurate classification of PQDs is essential to prevent equipment failures and to ensure stable grid operation. This paper proposes an explainable machine learning (ML) framework for multi-class PQD classification. The framework combines traditional algorithms, Logistic Regression (LR), Decision Tree (DT), Random Forest (RF), Support Vector Machine (SVM), and XGBoost, with a one-dimensional Convolutional Neural Network (1D-CNN). The dataset was preprocessed by handling negative THD values, capping outliers, performing feature selection, encoding categorical variables, and normalizing numerical features. Model interpretability was ensured using feature importance analysis and SHAP values. The experimental findings indicate that LR achieved the maximum accuracy of 99.79% across the five disturbance categories. Beyond predictive performance, the framework enhances transparency by identifying the most influential features including Total Harmonic Distortion (THD), RMS Voltage, and Peak Voltage. The findings demonstrate that integrating robust preprocessing, highperforming models, and explainability methods offers a reliable and interpretable solution for detecting power disturbances in advanced grid networks and present-day energy infrastructures.",
+              publishedAt: "Published in IEEE 28th ICCIT, 2025",
+              venueLogo: "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0MDAgMTAwIj48ZyBmaWxsPSIjZmZmIj48cGF0aCBkPSJNMjAgMEwwIDIwTDIwIDQwTDQwIDIwTDIwIDBaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgyMCwyNSkiLz48dGV4dCB4PSI4MCIgeT0iNTUiIGZvbnQtZmFtaWx5PSJBcmlhbCxIZWx2ZXRpY2Esc2Fucy1zZXJpZiIgZm9udC1zaXplPSI0NSIgZm9udC13ZWlnaHQ9ImJvbGQiPklFRUU8L3RleHQ+PHRleHQgeD0iODAiIHk9Ijg1IiBmb250LWZhbWlseT0iQXJpYWwsSGVsdmV0aWNhLHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTYiPkFkdmFuY2luZyBUZWNobm9sb2d5IGZvciBIdW1hbml0eTwvdGV4dD48L2c+PC9zdmc+",
+              venueLink: "https://iccit.org.bd/2025/",
+              footerLink: [
+                {
+                  name: "View Paper",
+                  url: "https://ieeexplore.ieee.org/document/11491454"
+                }
+              ]
+            },
+            {
+              projectName: "Quantifying the Relationship between Socioeconomic Status and Parent-Child Attachment on Adolescents through Machine Learning",
+              projectDesc: "Parent-child relationships have a significant impact on adolescent development, influencing social cohesion, intellectual growth, and emotional well-being. Adolescence entails rapid biological, cognitive, and neurodevelopmental changes that profoundly impact psychosocial functioning and interpersonal dynamics. Socioeconomic status (SES) is a crucial factor influencing parent-child relationships, although quantifying how parent-child attachment influences SES remains challenging. To bridge this gap, we propose a Machine Learning (ML) framework to classify SES based on parent-child attachment factors, by using the publicly available dataset, which consists of survey data from 239 families (478 samples). Following rigorous preprocessing including Principal Component Analysis (PCA) for feature selection, z-score normalization, outlier mitigation, and missing value imputation, seven classifiers (Decision Tree, Random Forest, k-Nearest Neighbors, Support Vector Machine, AdaBoost, XGBoost, and Logistic Regression) were trained and evaluated using k-fold cross-validation. Upsampling techniques were used to reduce class imbalance, which significantly enhanced model performance. XGBoost demonstrated the effectiveness of ensemble approaches in SES classification by attaining a top accuracy of 89.00% and an AUC-ROC of 98.40%, followed by Random Forest with 88.40% and Decision Tree with 87.33%. Our findings indicate that attachment dimensions, particularly trust, communication, and alienation in both maternal and paternal relationships, are closely associated with SES categories. These findings provide a data-driven approach for creating focused interventions to improve the well-being of adolescents and reduce socioeconomic inequities.",
+              publishedAt: "Published in IEEE 28th ICCIT, 2025",
+              venueLogo: "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0MDAgMTAwIj48ZyBmaWxsPSIjZmZmIj48cGF0aCBkPSJNMjAgMEwwIDIwTDIwIDQwTDQwIDIwTDIwIDBaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgyMCwyNSkiLz48dGV4dCB4PSI4MCIgeT0iNTUiIGZvbnQtZmFtaWx5PSJBcmlhbCxIZWx2ZXRpY2Esc2Fucy1zZXJpZiIgZm9udC1zaXplPSI0NSIgZm9udC13ZWlnaHQ9ImJvbGQiPklFRUU8L3RleHQ+PHRleHQgeD0iODAiIHk9Ijg1IiBmb250LWZhbWlseT0iQXJpYWwsSGVsdmV0aWNhLHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTYiPkFkdmFuY2luZyBUZWNobm9sb2d5IGZvciBIdW1hbml0eTwvdGV4dD48L2c+PC9zdmc+",
+              venueLink: "https://iccit.org.bd/2025/",
+              footerLink: [
+                {
+                  name: "View Paper",
+                  url: "https://ieeexplore.ieee.org/document/11491247"
+                }
+              ]
             }
           ]
         },
         {
-          projectName:
-            " A Vision Transformer-Based Pipeline for the Automated Classification of Monkeypox and Other Vesicular Skin Lesions: A Computationally-Efficient Approach for Global Health",
-          projectDesc: `Infectious diseases with dermatological manifestations, such as monkeypox, pose significant di-agnostic challenges, particularly in resource-limited settings. The visual similarity of monkeypox lesions to those of chickenpox, cowpox, hand-foot-and-mouth disease (HFMD), and measles com-plicates clinical assessment, often leading to misdiagnosis and delayed containment efforts. This thesis addresses the urgent need for an accurate, accessible, and automated diagnostic tool by pro-posing a novel pipeline based on a Vision Transformer (ViT). The proposed framework leverages pre-trained, frozen ViT-B/16 embeddings (specifically 'vit_base_patch16_224.orig_in21k' from the timm library) to perform six-class classification on the Mpox Skin Lesion Dataset Version 2.0 (MSLD v2.0), comprising 37,044 images. Evaluated using a rigorous five-fold cross-validation protocol, the primary model (ViT + SMOTE + SVM) achieves a mean macro-F1 score of 0.9895 ± 0.0018 and an accuracy of 98.95% ± 0.29%. By extracting robust, high-level features from im-ages, the pipeline avoids the computational expense of fine-tuning deep neural networks. To ad-dress the inherent class imbalance in medical datasets, the Synthetic Minority Oversampling Tech-nique (SMOTE) is integrated with a Support Vector Machine (SVM) classifier. Evaluated using a rigorous five-fold cross-validation protocol, the pipeline demonstrates exceptional performance. The primary model (ViT + SMOTE + SVM) achieves a mean macro-F1 score of 0.9895 ± 0.0018 and an accuracy of 98.95% ± 0.29%. Critically for public health applications and indicating a high sensitivity for detecting the target disease. This performance significantly surpasses a k-Nearest Neighbors (k-NN) baseline, validating the effectiveness of the SMOTE-based balancing strat-egy.This work makes several contributions: it demonstrates the power of frozen ViT embeddings for complex medical classification tasks, presents a lightweight and scalable pipeline suitable for deployment on edge devices, and provides a robust framework for handling class imbalance. By incorporating discussions on feature space visualization, ethical considerations, and practical de-ployment case studies, this thesis lays the groundwork for a clinically relevant tool that can en-hance global health preparedness and support dermatological diagnostics in diverse environments. 
-
-Keywords: Monkeypox, Skin Lesion Classification, Vision Transformer (ViT), Mpox Skin Le-sion Dataset (MSLD v2.0), Support Vector Machine (SVM), Synthetic Minority Oversampling Technique (SMOTE).
-
-`,
-          publishedAt: "Working Paper"
-          //footerLink: [
-          //{
-          // name: "View Paper",
-          //url: "https://iccit.org.bd/2025/"
-          //}
-          // ]
+          title: "Under Review",
+          projects: [
+            {
+              projectName: "Robust Optical Pulling of Plasmonic, Chiral, and Dielectric Nanorods via Hyperbolic Metamaterials",
+              projectDesc: "Optical manipulation enables the control of microscopic particles using light and has become an active area of research in recent years. One particularly interesting aspect is the possibility of generating optical pulling forces with hyperbolic metamaterials (HMMs), which leads to unusual light–matter interactions. In this work, the pulling response of plasmonic, chiral, and dielectric nanorods is studied on an HMM substrate. The system is illuminated by a timeharmonic, plane-polarized laser beam propagating along the +Z to –Z direction. The analysis is carried out under two different configurations. In the first case, plasmonic, chiral, and dielectric nanorods are arranged in a heterogeneous cluster over the HMMs and analyzed for the optical force response under three environmental conditions: fully immersed in water, partially immersed (half air–half water), and fully in air. Full-wave simulations reveal that in all three environments, all the objects (plasmonic, chiral, dielectric) nanorods consistently experience an optical pulling force at the 10−20 N scales for clustered configuration. In the second case, each nanorod type was independently placed on the same HMMs substrate within a full-air medium and investigated their force behaviors, while the plasmonic experience 100 times more than others for the single setup, which is 10−19 N ranges. Like the case of the cluster, three nanorods alone demonstrate a stable optical pulling force, also getting the pulling force with the variation of length, radius, and distance between them, which makes this optical setup more practical. Plasmonic behavior changes a lot with the arrangement of the nanostructures. On the other hand, dielectric nanorods are affected more by their length than their position. In our results, optical pulling appears for all the nanorods even with a simple HMM structure. This suggests the approach works in a stable way. It may also be useful for scaling the optical manipulation of anisotropic nanostructures, especially for sensing and nanophotonic applications.",
+              publishedAt: "Under Review in Optics & Laser Technology, 2025",
+              venueLogo: "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0MDAgMTAwIj48ZyBmaWxsPSIjZmZmIj48dGV4dCB4PSIyMCIgeT0iNjUiIGZvbnQtZmFtaWx5PSJBcmlhbCxIZWx2ZXRpY2Esc2Fucy1zZXJpZiIgZm9udC1zaXplPSIzNSIgZm9udC13ZWlnaHQ9ImJvbGQiPk9wdGljcyAmYW1wOyBMYXNlciBUZWNoPC90ZXh0PjwvZz48L3N2Zz4=",
+              footerLink: [
+                {
+                  name: "View Paper",
+                  url: "/projects/Under_review_paper_1.pdf"
+                }
+              ]
+            }
+          ]
         },
         {
-          projectName:
-            "Explainable and Privacy-Preserving Federated Intelligence for Smart Grid Cyber Attack Detection",
-          projectDesc: `This work Develops a privacy-preserving and interpretable intrusion detection framework for smart grids based on a Federated Bidirectional LSTM with Attention architecture. The study addresses the challenge of detecting temporally correlated and stealthy cyber-attacks across distributed substations under non-IID data settings, without centralized data sharing. By integrating federated optimization with attention-enhanced sequence modeling, the framework aims to improve detection robustness against False Data Injection, DDoS, and Man-in-the-Middle attacks while maintaining low false alarm rates. The work further investigates scalability, class imbalance mitigation, and real-time deployment feasibility, contributing toward trustworthy AI-enabled cybersecurity solutions for next-generation smart grids.
-`,
+          title: "Ongoing",
+          projects: [
+        {
+          projectName: "Anisotropic Metasurface-Induced Optical Pulling of Rayleigh Particles: Single and Cluster of Heterogeneous Objects",
+          projectDesc: "This work presents a comprehensive study on the design and implementation of optical tractor beams utilizing anisotropic metasurfaces to manipulate Rayleigh particles. By exploiting the direction-dependent electromagnetic properties of metasurfaces, composed of alternating plasmonic and dielectric layers, the study achieves precise control over light fields to generate negative radiation forces, enabling the pulling of subwavelength particles toward the light source. A robust theoretical framework models the interaction between structured light fields and Rayleigh particles, focusing on gradient and scattering forces. Numerical simulations, conducted using COMSOL Multiphysics, validate the metasurface designs, demonstrating stable optical pulling forces across a frequency range of 500–1500 THz for dielectric, plasmonic, and chiral particles. Experimental feasibility is assessed through proposed setups, emphasizing practical fabrication and characterization methods. The results reveal frequency dependent force profiles, with significant pulling forces attributed to multipole interference, particularly electric and magnetic dipole interactions. This work advances optical manipulation techniques, offering transformative potential for nanotechnology, biophysics, and optical sorting applications through compact, scalable metasurface-based systems.\n\n**Keywords:** Optical tractor beam, Anisotropic metasurface, Rayleigh particles, Optical forces, Electromagnetic field manipulation.",
           isOverview: true,
           publishedAt: "Working Paper"
-          //footerLink: [
-          //{
-          // name: "View Paper",
-          //url: ""
-          //}
-          // ]
+        },
+        {
+          projectName: "Ultra-broadband, polarization-insensitive, high-efficiency metamaterial absorber for thin film solar cell applications.",
+          projectDesc: "This work presents the design and numerical investigation of an ultra-broadband metamaterial absorber (MMA) engineered for high-performance solar energy harvesting. The proposed structure comprises a titanium (Ti) base layer, a silicon dioxide (SiO₂) dielectric interlayer, and a periodic array of flat-top pyramidal resonators formed by alternating Ti and tungsten (W) layers. Electromagnetic simulations conducted in CST Microwave Studio reveal that the absorber attains an average absorptance of 99.56% over the 300–3000 nm spectral window, with near-perfect absorption peaks observed at 1060 nm and 2870 nm. The architecture demonstrates polarization-independent behavior across the full 0°–90° polarization range and sustains stable absorption performance at oblique incidence angles up to 70°, confirming its robustness under non-ideal illumination conditions.\n\nTo further assess its photovoltaic applicability, the optical response of the structure was extended over the 300–1100 nm wavelength range using the finite-difference time-domain (FDTD) method, yielding a maximum average absorption of 72.6%. The underlying electrical and thermal characteristics were determined by numerically solving Poisson's equation, the carrier continuity equations, and the heat transfer equation within COMSOL Multiphysics. The optimized device achieves a power conversion efficiency (PCE) of 20.74% and a short-circuit current density of 39.91 mA/cm², both of which are competitive with state-of-the-art thin-film photovoltaic devices. Optical force analysis was additionally performed to evaluate light–matter interaction within the few-micron active region.\n\nSolar-thermal conversion efficiency was benchmarked against the standard AM1.5 solar spectrum over a broad operating temperature range of 400–1200 K, confirming sustained thermal performance across all evaluated conditions. Notably, light absorption induces a moderate temperature rise of approximately 10 K relative to ambient, and long-term thermal stability simulations confirm that the structure maintains its integrity without performance degradation. The symmetrical geometry of the resonator array inherently ensures polarization insensitivity, eliminating the need for additional polarization management elements. Collectively, these findings establish the proposed MMA as a promising candidate for broadband solar energy absorption, photovoltaic integration, and solar-thermal conversion applications.",
+          isOverview: true,
+          publishedAt: "Working Paper"
+        },
+        {
+          projectName: "A Vision Transformer-Based Pipeline for the Automated Classification of Monkeypox and Other Vesicular Skin Lesions: A Computationally-Efficient Approach for Global Health",
+          projectDesc: "Infectious diseases with dermatological manifestations, such as monkeypox, pose significant diagnostic challenges, particularly in resource-limited settings. The visual similarity of monkeypox lesions to those of chickenpox, cowpox, hand-foot-and-mouth disease (HFMD), and measles complicates clinical assessment, often leading to misdiagnosis and delayed containment efforts. This thesis addresses the urgent need for an accurate, accessible, and automated diagnostic tool by proposing a novel pipeline based on a Vision Transformer (ViT). The proposed framework leverages pre-trained, frozen ViT-B/16 embeddings (specifically 'vit_base_patch16_224.orig_in21k' from the timm library) to perform six-class classification on the Mpox Skin Lesion Dataset Version 2.0 (MSLD v2.0), comprising 37,044 images. Evaluated using a rigorous five-fold cross-validation protocol, the primary model (ViT + SMOTE + SVM) achieves a mean macro-F1 score of 0.9895 ± 0.0018 and an accuracy of 98.95% ± 0.29%. By extracting robust, high-level features from images, the pipeline avoids the computational expense of fine-tuning deep neural networks. To address the inherent class imbalance in medical datasets, the Synthetic Minority Oversampling Technique (SMOTE) is integrated with a Support Vector Machine (SVM) classifier. Evaluated using a rigorous five-fold cross-validation protocol, the pipeline demonstrates exceptional performance. The primary model (ViT + SMOTE + SVM) achieves a mean macro-F1 score of 0.9895 ± 0.0018 and an accuracy of 98.95% ± 0.29%. Critically for public health applications and indicating a high sensitivity for detecting the target disease. This performance significantly surpasses a k-Nearest Neighbors (k-NN) baseline, validating the effectiveness of the SMOTE-based balancing strategy. This work makes several contributions: it demonstrates the power of frozen ViT embeddings for complex medical classification tasks, presents a lightweight and scalable pipeline suitable for deployment on edge devices, and provides a robust framework for handling class imbalance. By incorporating discussions on feature space visualization, ethical considerations, and practical deployment case studies, this thesis lays the groundwork for a clinically relevant tool that can enhance global health preparedness and support dermatological diagnostics in diverse environments.",
+          isOverview: true,
+          publishedAt: "Working Paper"
+        },
+        {
+          projectName: "Explainable and Privacy-Preserving Federated Intelligence for Smart Grid Cyber Attack Detection",
+          projectDesc: "This work develops a privacy-preserving and interpretable intrusion detection framework for smart grids based on a Federated Bidirectional LSTM with Attention architecture. The study addresses the challenge of detecting temporally correlated and stealthy cyber-attacks across distributed substations under non-IID data settings, without centralized data sharing. By integrating federated optimization with attention-enhanced sequence modeling, the framework aims to improve detection robustness against False Data Injection, DDoS, and Man-in-the-Middle attacks while maintaining low false alarm rates. The work further investigates scalability, class imbalance mitigation, and real-time deployment feasibility, contributing toward trustworthy AI-enabled cybersecurity solutions for next-generation smart grids.",
+          isOverview: true,
+          publishedAt: "Working Paper"
+        }
+          ]
         }
       ]
     }
@@ -4358,8 +4265,8 @@ const contactInfo = {
   title: "Contact Me",
   subtitle:
     "Have a question or want to collaborate on a research or project? Feel free to reach out!",
-  number: "+8801834616407",
-  email_address: "albabahmed74@gmail.com",
+  number: "+880 1333-528424",
+  email_address: "edu.eee.alamin@gmail.com",
   contactFormAction: "https://formspree.io/f/mjgevvbq"
 };
 
@@ -4384,6 +4291,7 @@ export {
   openSource,
   bigProjects,
   achievementSection,
+  awardsSection,
   blogSection,
   talkSection,
   podcastSection,
@@ -4391,6 +4299,7 @@ export {
   twitterDetails,
   isHireable,
   resumeSection,
-  researchSection
+  researchSection,
+  leadershipSection
 };
 

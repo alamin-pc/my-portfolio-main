@@ -14,6 +14,8 @@ import Research from "./research/Research";
 import ScrollToTopButton from "./topbutton/Top";
 import Twitter from "./twitter-embed/twitter";
 import Profile from "./profile/Profile";
+import Awards from "./awards/Awards";
+import Leadership from "./leadership/Leadership";
 import SplashScreen from "./splashScreen/SplashScreen";
 import {splashScreen} from "../portfolio";
 import "./Main.scss";
@@ -42,16 +44,18 @@ const Main = () => {
         <>
           <Header />
           <Greeting />
-          <Education />
           <Research />
-          <HierarchicalProjects />
           <WorkExperience />
+          <Education />
+          <Skills />
+          <StackProgress />
+          <HierarchicalProjects />
+          <Awards />
+          <Leadership />
           <Achievement />
           <Talks />
           <Twitter />
           <Podcast />
-          <Skills />
-          <StackProgress />
           <Profile />
           <Footer />
           <ScrollToTopButton />

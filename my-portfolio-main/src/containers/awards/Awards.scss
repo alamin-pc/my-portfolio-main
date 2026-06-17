@@ -1,0 +1,196 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Outfit:wght@100..900&family=Inter:wght@100..900&display=swap");
+@import "../../_globalColor";
+
+.awards-main-div {
+  width: 90%;
+  max-width: 1100px;
+  padding: 40px 10px;
+  margin: 0 auto;
+}
+
+.awards-header {
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.awards-heading, .skills-heading {
+  font-family: "Outfit", sans-serif;
+  font-size: 56px;
+  font-weight: 800;
+  line-height: normal;
+  margin: 0;
+  background: $primaryGradient;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.awards-subtitle {
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
+  line-height: 1.6;
+  color: $subTitle;
+  margin-top: 8px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.awards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 30px;
+}
+
+.award-card {
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 30px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+
+  &:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+    
+    .award-icon {
+        transform: scale(1.1) rotate(10deg);
+        background: $primaryGradient;
+        color: #fff;
+    }
+  }
+}
+
+.dark-mode-card {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+  
+  &:hover {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+  }
+}
+
+.award-icon {
+  width: 60px;
+  height: 60px;
+  background: rgba($main-color, 0.05);
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: $main-color;
+  transition: all 0.3s ease;
+}
+
+.award-title {
+  font-family: "Lora", serif;
+  font-size: 18px;
+  font-weight: 700;
+  font-style: italic;
+  margin: 0 0 10px 0;
+  color: $titleColor;
+  line-height: 1.4;
+}
+
+.award-org {
+  font-family: "Outfit", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: $main-color;
+  margin: 0 0 15px 0;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.award-divider {
+  width: 40px;
+  height: 3px;
+  background: $primaryGradient;
+  margin-bottom: 15px;
+  border-radius: 2px;
+}
+
+.award-desc {
+  font-family: "Inter", sans-serif;
+  font-size: 13px;
+  line-height: 1.6;
+  color: $textColor;
+  margin: 0 0 20px 0;
+  position: relative;
+  padding-left: 15px;
+  border-left: 2px solid rgba($main-color, 0.1);
+}
+
+.award-footer {
+  margin-top: auto;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.award-certificate-button {
+  padding: 8px 20px;
+  border-radius: 25px;
+  background: $primaryGradient;
+  color: #fff !important;
+  font-weight: 600;
+  font-family: "Inter", sans-serif;
+  text-decoration: none !important;
+  transition: all 0.3s ease;
+  font-size: 12px;
+  box-shadow: 0 4px 15px rgba($main-color, 0.3);
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba($main-color, 0.4);
+  }
+}
+
+.dark-mode-text {
+  color: #fff !important;
+}
+
+.dark-mode-subtitle {
+  color: $main-color !important;
+}
+
+.dark-mode-desc {
+  color: rgba(241, 245, 249, 0.6) !important;
+  border-left-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Media Queries */
+@media (max-width: 1380px) {
+  .awards-heading {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .awards-heading {
+    font-size: 30px;
+  }
+  .awards-subtitle {
+    font-size: 14px;
+  }
+  .awards-container {
+    grid-template-columns: 1fr;
+  }
+  .award-card {
+      padding: 20px;
+  }
+  .award-title {
+      font-size: 16px;
+  }
+  .award-org {
+      font-size: 13px;
+  }
+}

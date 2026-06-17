@@ -265,22 +265,21 @@
 
 .hero-photo-wrap {
   position: relative;
-  width: 100%;
-  max-width: 500px;
+  width: 400px;
+  height: 400px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .hero-photo {
-  max-width: 95%;
-  height: auto;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
   z-index: 2;
   filter: drop-shadow(0 20px 40px rgba(0, 0, 0, 0.35));
   animation: hero-float 6s ease-in-out infinite;
-  -webkit-mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
-  mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
-  margin-top: -70px;
 }
 
 /* Ring */

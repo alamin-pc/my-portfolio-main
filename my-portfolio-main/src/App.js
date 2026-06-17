@@ -9,7 +9,7 @@ import {StyleProvider} from "./contexts/StyleContext";
 import {useLocalStorage} from "./hooks/useLocalStorage";
 import ScrollToTop from "./components/ScrollToTop";
 
-import NeuralBackground from "./components/neuralBackground/NeuralBackground";
+import PhotonicsBackground from "./components/photonicsBackground/PhotonicsBackground";
 
 function App() {
   const [isDark, setIsDark] = useLocalStorage("isDark", false);
@@ -21,7 +21,7 @@ function App() {
   return (
     <div className={isDark ? "dark-mode" : null}>
       <StyleProvider value={{isDark: isDark, changeTheme: changeTheme}}>
-        <NeuralBackground />
+        <PhotonicsBackground />
         <Router>
           <ScrollToTop />
           <Switch>
