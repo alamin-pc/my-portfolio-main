@@ -1,0 +1,9 @@
+{
+  "buildCommand": "cd my-portfolio-main && node fetch.js && npx react-scripts build",
+  "installCommand": "cd my-portfolio-main && npm install",
+  "outputDirectory": "my-portfolio-main/build",
+  "framework": null,
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/index.html" }
+  ]
+}

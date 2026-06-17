@@ -1,0 +1,9 @@
+{
+  "name": "alamin-portfolio-root",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "install": "cd my-portfolio-main && npm install",
+    "build": "cd my-portfolio-main && npm run build"
+  }
+}
