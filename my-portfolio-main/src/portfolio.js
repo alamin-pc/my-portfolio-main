@@ -23,7 +23,7 @@ const greeting = {
   username: "Md. Al Amin Chy",
   title: "Hi all, I'm Md. Al Amin Chy",
   subTitle: emoji(
-    `I am an <span className="highlight">Adjunct Lecturer</span> and <span className="highlight">researcher</span> in Electrical and Electronic Engineering, specializing in <span className="highlight">metasurfaces, RF & microwave engineering, nanophotonics, optical manipulation, and machine learning</span>. My research focuses on <span className="highlight">advanced electromagnetic and photonic structures</span>, including <span className="highlight">reconfigurable metasurfaces, hyperbolic metamaterials, metamaterial absorbers, and nanophotonic biosensors</span> for <span className="highlight-alt">wave control, sensing, and energy applications</span>. I also explore <span className="highlight">explainable AI for intelligent engineering systems</span>, bridging photonics, electromagnetics, and artificial intelligence toward <span className="highlight-alt">next-generation wireless communications, stealth technology, renewable energy, nanotechnology, and smart infrastructure</span>.`
+    `I am a <span className="highlight">Lecturer</span> with a research focus in Electrical and Electronic Engineering. My work spans <span className="highlight">metasurfaces, RF and microwave engineering, nanophotonics, optical manipulation, and machine learning</span>. I design and analyze <span className="highlight">advanced electromagnetic and photonic structures</span>, including <span className="highlight">reconfigurable metasurfaces, hyperbolic metamaterials, metamaterial absorbers, and nanophotonic biosensors</span>, with a focus on <span className="highlight-alt">wave control, sensing, and energy-related applications</span>. I also investigate <span className="highlight">explainable AI for intelligent engineering systems</span>, combining electromagnetics, photonics, and data-driven methods to address challenges in <span className="highlight-alt">advanced wireless communication, sensing, energy technologies, and smart infrastructure</span>.`
   ),
   resumeLink:
     "/projects/Ressume_Md._Al_Amin_Chy_latest.pdf", // Set to empty to hide the button
@@ -297,23 +297,6 @@ const workExperiences = {
   display: true,
   sections: [
     {
-      title: "Professional Experience",
-      experiences: [
-        {
-          title: "Adjunct Lecturer",
-          company: "Dept. of Electrical and Electronic Engineering, Sylhet Engineering College.",
-          companylogo: "/works/SEC Logo.png",
-          date: "Aug 2025 – Present",
-          desc: "Full Time, Bangladesh",
-          descBullets: [
-            "Delivered lectures for undergraduate coursework, including:<br/><div style='display: flex; flex-wrap: wrap; gap: 20px; margin-top: 5px;'><div style='min-width: 250px;'>➤ <strong>Theoretical Courses:</strong><br/>&nbsp;&nbsp;&nbsp;1) <em>Electromagnetic Fields & Waves</em>;<br/>&nbsp;&nbsp;&nbsp;2) <em>Electrical Properties of Materials</em>;<br/>&nbsp;&nbsp;&nbsp;3) <em>Electronics II</em></div><div style='min-width: 250px;'>➤ <strong>Laboratory Courses:</strong><br/>&nbsp;&nbsp;&nbsp;4) <em>Measurement & Instrumentation Lab</em>;<br/>&nbsp;&nbsp;&nbsp;5) <em>Communication I Lab</em></div></div>",
-            "Conducted lectures, graded coursework, and assisted students with course material during and after class."
-          ],
-          url: "https://sec.ac.bd/"
-        }
-      ]
-    },
-    {
       title: "Research Experience",
       experiences: [
         {
@@ -378,13 +361,13 @@ const workExperiences = {
       title: "Teaching Experience",
       experiences: [
         {
-          title: "Academic Instructor",
+          title: "Lecturer",
           company: "Baraka Academy, Sylhet, Bangladesh",
           companylogo: "/works/Baraka_logo.jpg",
-          date: "September 2020 - November 2024",
+          date: "September 2020 - Present",
           desc: "Part time, On-site",
           descBullets: [
-            "Manage 3 daily classes for SSC and HSC students alongside undergraduate studies, delivering consistent instruction over 5+ years in core science subjects.",
+            "Deliver 20+ hours of instruction per week across 3 daily SSC and HSC classes, including lecture delivery, question-paper preparation, exam paper evaluation, grading, marksheet preparation, and student performance assessment.",
             "Covered extensive topics:<br/>➤ <strong>[PHY]</strong> → Vector-Calculus, Geometrical & Physical Optics, Semiconductor & Electronics, Modern Physics, Electromagnetism, Particle physics<br/>➤ <strong>[H. MATH]</strong> → Calculus, Vectors, Matrices & Determinants, Algorithms, Particle Motion.<br/>➤ <strong>[ICT]</strong> → Communication Systems & Networking, Web design & HTML, C Programming, DBMS."
           ]
         }

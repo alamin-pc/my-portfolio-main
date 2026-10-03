@@ -6,9 +6,9 @@ import {greeting, socialMediaLinks} from "../../portfolio";
 import StyleContext from "../../contexts/StyleContext";
 
 const ROLES = [
-  {text: "Adjunct Lecturer", icon: "👨‍🏫"},
+  {text: "Lecturer", icon: "🧑‍🏫"},
   {text: "Photonics Enthusiast", icon: "💡"},
-  {text: "RF & Microwave Engineer", icon: "📡"},
+  {text: "Research Assistant", icon: "🔬"},
   {text: "AI Explorer", icon: "🧭"}
 ];
 const TYPING_SPEED = 80;

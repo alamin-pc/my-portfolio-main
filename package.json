@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "install": "cd my-portfolio-main && npm install",
+    "start": "cd my-portfolio-main && npm start",
     "build": "cd my-portfolio-main && npm run build"
   }
 }
